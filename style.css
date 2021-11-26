@@ -1,0 +1,439 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+nav {
+ background: #ffffff;
+ position: fixed;
+ top: 0;
+ right: 0;
+ width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 3em;
+  z-index: 10;
+}
+
+
+nav ul {
+
+  display: flex;
+  
+ 
+   
+}
+
+
+
+
+nav ul li {
+       list-style: none;
+    
+      font-size: 1rem;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      padding: 0 0.8em;
+      cursor: pointer;
+      transition: all 500ms;
+        text-transform: uppercase;
+}
+
+
+
+nav ul li a {
+    display: flex;
+  text-decoration: none;
+  color: #252e3f;
+
+
+}
+
+
+main .hero-section{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 6rem 0 7rem 3rem;
+  font-family: 'Lato', sans-serif;
+
+}
+
+main .hero-section img {
+  border-radius: 50% 30%;
+  width: 450px;
+  height: 400px;
+  padding: 0 3rem 0 0;
+
+}
+
+main .hero-section .hero-section-text {
+  margin: 0  1em 0 2em;
+}
+
+main .hero-section h1{
+   font-size: 4rem;
+      color:#252e3f;
+
+
+
+}
+
+main .hero-section h1 span{
+ 
+     color: #BE415D;
+
+}
+
+main .hero-section .hero-section-text p{
+     font-size: 36px;
+     font-weight: 700;
+     color:#252e3f;
+     text-transform: uppercase;
+
+}
+
+main .about-section {
+  background: #252e3f;
+  width: 100%
+}
+
+main .about-section .about-section-text{
+
+ padding: 5rem;
+}
+
+main .about-section .about-section-text h2 {
+     font-size: 3rem;
+     text-align: center;
+     color: #ffffff;
+     padding-bottom: 1rem;
+  
+}
+
+main .about-section .about-section-text p {
+  font-size: 24px;
+  color: #f2f5fa;
+   margin: 0 auto;
+   max-width: 800px;
+   line-height: 1.6;
+} 
+
+
+main .portfolio-section{
+
+background: #ffffff;
+padding: 3rem 0 5rem 0;
+
+}
+
+
+main .portfolio-section h2 {
+      font-size: 3rem;
+     text-align: center;
+     background-color: #ffffff;
+     color: #252e3f;
+     padding: 2.5rem 0;
+
+}
+main .portfolio-section .portfolio-section-grid {
+
+  display: flex;
+  gap: 30px;
+  padding: 0 20px;
+
+ 
+}
+
+main .portfolio-section .portfolio-section-grid img {
+  max-width: 100%;
+  padding-bottom: 1rem;
+  transition: all 1000ms;
+}
+
+main .portfolio-section .portfolio-section-grid img:hover {
+  transform: translateY(-5px)
+}
+
+main .portfolio-section .portfolio-section-grid a {
+  text-transform: uppercase;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  color: #252e3f;
+
+}
+
+
+footer {
+  width: 100%;
+   background:#252e3f;
+}
+
+footer h2 {
+
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem
+}
+
+footer .footer-icon-wrapper {
+    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+footer .footer-icon-wrapper svg {
+  margin-left: 20px;
+   margin-right: 20px;
+  
+}
+
+footer p {
+   color: #ffffff;
+  text-align: center;
+}
+
+footer p a {
+  text-decoration: underline;
+  color: #ffffff;
+
+} 
+
+
+@media screen  and (max-width:890px) {
+  
+p {
+  font-size: 1.2rem;
+}
+
+nav {
+ background: #ffffff;
+ position: fixed;
+ top: 0;
+ right: 0;
+ width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 3em;
+}
+
+
+nav ul {
+
+  display: flex;
+  
+ 
+   
+}
+
+
+
+
+nav ul li {
+       list-style: none;
+    
+      font-size: 1rem;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      padding: 0 0.8em;
+      cursor: pointer;
+      transition: all 500ms;
+        text-transform: uppercase;
+}
+
+
+
+nav ul li a {
+    display: flex;
+  text-decoration: none;
+  color: #252e3f;
+
+
+}
+
+
+main .hero-section{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 6rem 0 7rem 3rem;
+  font-family: 'Lato', sans-serif;
+
+}
+
+main .hero-section img {
+  border-radius: 50% 30%;
+  width: 450px;
+  height: 400px;
+  padding: 0 3rem 0 0;
+
+}
+
+main .hero-section .hero-section-text {
+  margin: 2em  0 2em 0;
+}
+
+main .hero-section h1{
+ 
+  text-align: center;
+   font-size: 4rem;
+      color:#252e3f;
+
+
+
+}
+
+main .hero-section h1 span{
+ 
+     color: #BE415D;
+
+}
+
+main .hero-section .hero-section-text p{
+  text-align: center;
+     font-size: 36px;
+     font-weight: 700;
+     color:#252e3f;
+     text-transform: uppercase;
+      padding-bottom: 2rem;
+
+}
+
+main .about-section {
+  background: #252e3f;
+  width: 100%
+}
+
+main .about-section .about-section-text{
+
+ padding: 5rem;
+}
+
+main .about-section .about-section-text h2 {
+     font-size: 3rem;
+     text-align: center;
+     color: #ffffff;
+     padding-bottom: 1rem;
+  
+}
+
+main .about-section .about-section-text p {
+  font-size: 24px;
+  color: #f2f5fa;
+   margin: 0 auto;
+   max-width: 800px;
+   line-height: 1.6;
+} 
+
+
+main .portfolio-section{
+
+background: #ffffff;
+padding: 3rem 0 5rem 0;
+
+}
+
+
+main .portfolio-section h2 {
+      font-size: 3rem;
+     text-align: center;
+     background-color: #ffffff;
+     color: #252e3f;
+     padding: 2.5rem 0;
+
+}
+main .portfolio-section .portfolio-section-grid {
+
+  display: flex;
+  gap: 30px;
+  padding: 0 20px;
+
+ 
+}
+
+main .portfolio-section .portfolio-section-grid img {
+  max-width: 100%;
+  padding-bottom: 1rem;
+  transition: all 1000ms;
+}
+
+main .portfolio-section .portfolio-section-grid img:hover {
+  transform: translateY(-5px)
+}
+
+main .portfolio-section .portfolio-section-grid a {
+  text-transform: uppercase;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  color: #252e3f;
+
+}
+
+
+footer {
+  width: 100%;
+   background:#252e3f;
+}
+
+footer h2 {
+
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem
+}
+
+footer .footer-icon-wrapper {
+    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+footer .footer-icon-wrapper svg {
+  margin-left: 20px;
+   margin-right: 20px;
+  
+}
+
+footer p {
+   color: #ffffff;
+  text-align: center;
+}
+
+footer p a {
+  text-decoration: underline;
+  color: #ffffff;
+
+} 
+
+
+}
