@@ -225,6 +225,7 @@ footer .icons svg {
 footer p {
    color: #ffffff;
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 footer p a {
@@ -232,6 +233,8 @@ footer p a {
   color: #ffffff;
 
 } 
+
+
 
 
 @media screen and (max-width:890px) {
@@ -546,16 +549,16 @@ main .portfolio-section .portfolio-section-grid {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 1.5em 3em;
+    padding: 0.5em 3em;
     flex-direction: column;
   }
 
   nav ul li {
     list-style: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    padding: 0 0.3em;
+    padding: 0 0.8em;
     cursor: pointer;
     transition: all 500ms;
     text-transform: uppercase;
@@ -649,8 +652,8 @@ main .portfolio-section .portfolio-section-grid {
     right: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: 1.5em 3em;
+    justify-content: space-evenly;
+    padding: 0.5em 3em;
     flex-direction: column;
   }
 
