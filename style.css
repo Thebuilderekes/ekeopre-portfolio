@@ -20,6 +20,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+h2 {
+  text-transform: uppercase;
+  }
+
 p {
   font-size: 1.2rem;
 }
@@ -80,6 +84,9 @@ nav ul li a {
 }
 
 
+
+
+
 main .hero-section{
   height: 100vh ;
   display: flex;
@@ -88,6 +95,7 @@ main .hero-section{
   align-items: center;
   padding: 6rem 0 7rem 3rem;
   font-family: 'Lato', sans-serif;
+  position: relative;
 
 }
 
@@ -125,6 +133,37 @@ main .hero-section .hero-section-text p{
 
 }
 
+main .hero-section .hero-section-text p:before{
+
+    content: '';
+    position: absolute;
+  top: 8%;
+    left: -5%;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    border: 20px solid rgba(190, 65, 92, 0.377);
+    z-index: -1;
+    overflow-x: hidden;
+
+}
+
+main .hero-section .hero-section-text p:after{
+
+    content: '';
+    position: absolute;
+  bottom: -5%;
+    right: -5%;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    border: 20px solid #252e3f59;
+    z-index: -1;
+    overflow-x: hidden;
+
+
+}
+
 main .about-section {
   background: #252e3f;
   width: 100%
@@ -148,6 +187,7 @@ main .about-section .about-section-text p {
   color: #f2f5fa;
    margin: 0 auto;
    max-width: 800px;
+   text-align: center;
    line-height: 1.6;
 } 
 
