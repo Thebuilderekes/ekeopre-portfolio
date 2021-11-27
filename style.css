@@ -18,6 +18,8 @@ body {
   width: 100%;
   background: #ffffff;
     font-family: 'Lato', sans-serif;
+    
+  overflow-x:hidden;
 }
 
 h2 {
@@ -95,7 +97,8 @@ main .hero-section{
   align-items: center;
   padding: 6rem 0 7rem 3rem;
   font-family: 'Lato', sans-serif;
-  position: relative;
+
+
 
 }
 
@@ -153,7 +156,7 @@ main .hero-section .hero-section-text p:after{
     content: '';
     position: absolute;
   bottom: -5%;
-    right: -5%;
+    right: 1%;
     width: 6em;
     height: 6em;
     border-radius: 50%;
