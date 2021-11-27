@@ -155,7 +155,7 @@ main .hero-section .hero-section-text p:after{
 
     content: '';
     position: absolute;
-  bottom: -5%;
+  bottom: -15%;
     right: 1%;
     width: 6em;
     height: 6em;
@@ -498,11 +498,6 @@ footer p a {
 }
 
 
-
-@media screen  and (max-width:769px){
-
-
-}
 
 
 @media screen  and (max-width:685px){
