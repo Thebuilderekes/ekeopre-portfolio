@@ -24,6 +24,9 @@ p {
   font-size: 1.2rem;
 }
 
+a {
+  text-decoration: none;
+}
 nav {
  background: #ffffff;
  position: fixed;
