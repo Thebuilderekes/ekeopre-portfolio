@@ -619,7 +619,7 @@ main .hero-section {
 
 
 main .hero-section img {
-    max-width: 50%;
+    max-width: 65%;
     padding: 0px 0rem 0 0;
 
 }
@@ -641,7 +641,21 @@ main .about-section .about-section-text h2 {
     padding-bottom: 2rem;
   }
 
+main .hero-section .hero-section-text p:after{
 
+    content: '';
+    position: absolute;
+  bottom: -7%;
+    right: 1%;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    border: 20px solid #252e3f59;
+    z-index: -1;
+    overflow-x: hidden;
+
+
+}
 
   
 main .about-section .about-section-text {
@@ -723,7 +737,7 @@ main .hero-section {
 
 
 main .hero-section img {
-    max-width: 50%;
+    max-width: 65%;
     padding: 0px 0rem 0 0;
 
 }
