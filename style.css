@@ -16,7 +16,7 @@ html {
 
 body {
   width: 100%;
-  background: #ffffff;
+  background: #f1f0f0;
     font-family: 'Lato', sans-serif;
     
   overflow-x:hidden;
@@ -34,7 +34,7 @@ a {
   text-decoration: none;
 }
 nav {
- background: #ffffff;
+ background: #f1f0f0;
  position: fixed;
  top: 0;
  right: 0;
@@ -55,9 +55,7 @@ nav .top-icons a svg {
 nav ul {
 
   display: flex;
-  
- 
-   
+     
 }
 
 
@@ -76,18 +74,17 @@ nav ul li {
 }
 
 
-
 nav ul li a {
-    display: flex;
+  display: flex;
   text-decoration: none;
   color: #252e3f;
-
-
+  transition: 0.5s all;
 }
 
 
-
-
+nav ul li a:hover {
+  transform: translateY(-5px)
+}
 
 main .hero-section{
   height: 100vh ;
@@ -98,14 +95,14 @@ main .hero-section{
   padding: 6rem 0 7rem 3rem;
   font-family: 'Lato', sans-serif;
 
-
-
 }
 
 main .hero-section img {
+
+
   border-radius: 50% 30%;
   max-width: 30%;
-
+  
   padding: 0 3rem 0 0;
 
 }
@@ -115,24 +112,25 @@ main .hero-section .hero-section-text {
 }
 
 main .hero-section h1{
-   font-size: 4rem;
-      color:#252e3f;
-
-
+   font-size: 2rem;
+   color:#252e3f;
+   line-height: 1.5;
 
 }
 
 main .hero-section h1 span{
- 
+       font-size: 4rem;
      color: #BE415D;
+     /* padding-bottom: 1rem; */
 
 }
 
 main .hero-section .hero-section-text p{
-     font-size: 36px;
+     font-size: 50px;
      font-weight: 700;
      color:#252e3f;
      text-transform: uppercase;
+     padding-top: 1rem;
 
 }
 
@@ -168,6 +166,7 @@ main .hero-section .hero-section-text p:after{
 }
 
 main .about-section {
+ 
   background: #252e3f;
   width: 100%
 }
@@ -197,7 +196,7 @@ main .about-section .about-section-text p {
 
 main .portfolio-section{
 
-background: #ffffff;
+background: #f1f0f0;
 padding: 3rem 0 5rem 0;
 
 }
@@ -206,7 +205,7 @@ padding: 3rem 0 5rem 0;
 main .portfolio-section h2 {
       font-size: 3rem;
      text-align: center;
-     background-color: #ffffff;
+  
      color: #252e3f;
      padding: 1.5rem 0 2rem 0;
 
@@ -290,7 +289,7 @@ p {
 }
 
 nav {
- background: #ffffff;
+
  position: fixed;
  top: 0;
  right: 0;
@@ -348,7 +347,7 @@ main .hero-section{
 
 main .hero-section img {
   border-radius: 50% 30%;
-   max-width: 60%;
+  width: 60%;
   padding: 0 3rem 0 0;
 
 }
@@ -412,7 +411,6 @@ main .about-section .about-section-text p {
 
 main .portfolio-section{
 
-background: #ffffff;
 padding: 3rem 0 5rem 0;
 
 }
@@ -420,8 +418,7 @@ padding: 3rem 0 5rem 0;
 
 main .portfolio-section h2 {
       font-size: 3rem;
-     text-align: center;
-     background-color: #ffffff;
+
      color: #252e3f;
      padding: 2rem 0 1.5rem  0;
 
@@ -498,12 +495,44 @@ footer p a {
 }
 
 
+@media screen and (max-width:768px){
+
+
+main .hero-section img {
+     min-width: 50%;
+    padding: 0px 0rem 0 0;
+
+}
+
+main .hero-section .hero-section-text p:after{
+
+    content: '';
+    position: absolute;
+  bottom: -3%;
+    right: 1%;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    border: 20px solid #252e3f59;
+    z-index: -1;
+    overflow-x: hidden;
+
+
+}
+
+
+/* footer {
+  margin-bottom: 17rem;
+} */
+
+}
+
 
 
 @media screen  and (max-width:685px){
 
    nav {
-    background: #ffffff;
+
     position: fixed;
     top: 0;
     right: 0;
@@ -530,8 +559,6 @@ main .hero-section{
    font-size: 2.5rem;
       color:#252e3f;
 
-
-
 }
 
   
@@ -547,11 +574,7 @@ main .about-section .about-section-text p {
     margin: 0 auto;
     /* max-width: 800px; */
     line-height: 1.6;
-
 }
-
-
-
 
 
 }
@@ -561,9 +584,7 @@ main .about-section .about-section-text p {
 
     main .hero-section h1{
    font-size: 2.5rem;
-      color:#252e3f;
-
-
+      color:#252e3f
 
 }
 
@@ -577,13 +598,13 @@ main .portfolio-section .portfolio-section-grid {
 }
 
 
-
 }
 
-@media screen and (max-width:375px){
 
-  nav {
-    background: #ffffff;
+@media screen and (max-width:414px){
+
+nav {
+
     position: fixed;
     top: 0;
     right: 0;
@@ -619,7 +640,123 @@ main .hero-section {
 
 
 main .hero-section img {
-    max-width: 65%;
+     min-width: 50%;
+    padding: 0px 0rem 0 0;
+
+}
+
+main .about-section .about-section-text h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 1rem;
+
+}
+
+  main .hero-section .hero-section-text p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #252e3f;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+  }
+
+main .hero-section .hero-section-text p:after{
+
+    content: '';
+    position: absolute;
+    bottom: -7%;
+    right: 1%;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    border: 20px solid #252e3f59;
+    z-index: -1;
+    overflow-x: hidden;
+
+
+}
+
+  
+main .about-section .about-section-text {
+    padding: 5.5rem 2rem 4rem 2rem
+
+}
+
+
+
+
+
+main .about-section .about-section-text p {
+    font-size: 18px;
+    color: #f2f5fa;
+    margin: 0 auto;
+    /* max-width: 800px; */
+    line-height: 1.6;
+
+}
+
+main .portfolio-section h2 {
+    font-size: 2rem;
+    text-align: center;
+
+    color: #252e3f;
+    padding: 1.5rem 0;
+
+}
+
+main .portfolio-section .portfolio-section-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+}
+  
+
+}
+
+
+@media screen and (max-width:375px){
+
+  nav {
+  
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 3em;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    list-style: none;
+    font-size: 0.9rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding: 0 0.8em;
+    cursor: pointer;
+    transition: all 500ms;
+    text-transform: uppercase;
+
+
+  }
+main .hero-section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+     padding: 20rem 0 20rem 0rem;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+}
+
+
+
+main .hero-section img {
+     min-width: 50%;
     padding: 0px 0rem 0 0;
 
 }
@@ -659,7 +796,7 @@ main .hero-section .hero-section-text p:after{
 
   
 main .about-section .about-section-text {
-    padding: 2rem;
+    padding: 4.5rem 2rem 4rem 2rem
 
 }
 
@@ -679,7 +816,7 @@ main .about-section .about-section-text p {
 main .portfolio-section h2 {
     font-size: 2rem;
     text-align: center;
-    background-color: #ffffff;
+ 
     color: #252e3f;
     padding: 1.5rem 0;
 
@@ -701,7 +838,7 @@ main .portfolio-section .portfolio-section-grid {
 @media screen and (max-width:360px){
 
   nav {
-    background: #ffffff;
+  
     position: fixed;
     top: 0;
     right: 0;
@@ -737,7 +874,7 @@ main .hero-section {
 
 
 main .hero-section img {
-    max-width: 65%;
+     min-width: 60%;
     padding: 0px 0rem 0 0;
 
 }
@@ -782,7 +919,7 @@ main .about-section .about-section-text p {
 main .portfolio-section h2 {
     font-size: 2rem;
     text-align: center;
-    background-color: #ffffff;
+  
     color: #252e3f;
     padding: 1.5rem 0;
 
