@@ -236,7 +236,7 @@ main .portfolio-section .portfolio-section-grid a {
   font-size: 20px;
   font-weight: 700;
   color: #252e3f;
-
+    padding-right: 20px; 
 }
 
 
@@ -888,6 +888,21 @@ main .hero-section img {
     padding-bottom: 2rem;
   }
 
+main .hero-section .hero-section-text p:after{
+
+    content: '';
+    position: absolute;
+  bottom: -15%;
+    right: 1%;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    border: 20px solid #252e3f59;
+    z-index: -1;
+    overflow-x: hidden;
+
+
+}
 
 
   
