@@ -194,6 +194,11 @@ main .about-section .about-section-text p {
 } 
 
 
+main .about-section .about-section-text p span {
+  color: #fa7894;
+}
+
+
 main .portfolio-section{
 
 background: #f1f0f0;
