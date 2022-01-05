@@ -98,13 +98,9 @@ main .hero-section{
 }
 
 main .hero-section img {
-
-
   border-radius: 50% 30%;
   max-width: 30%;
-  
   padding: 0 3rem 0 0;
-
 }
 
 main .hero-section .hero-section-text {
@@ -115,14 +111,11 @@ main .hero-section h1{
    font-size: 2rem;
    color:#252e3f;
    line-height: 1.5;
-
 }
 
 main .hero-section h1 span{
-       font-size: 4rem;
+     font-size: 4rem;
      color: #BE415D;
-     /* padding-bottom: 1rem; */
-
 }
 
 main .hero-section .hero-section-text p{
@@ -131,7 +124,6 @@ main .hero-section .hero-section-text p{
      color:#252e3f;
      text-transform: uppercase;
      padding-top: 1rem;
-
 }
 
 main .hero-section .hero-section-text p:before{
@@ -221,6 +213,8 @@ main .portfolio-section .portfolio-section-grid {
   gap: 30px;
   padding: 0 20px;
 
+  margin-bottom: 50px;
+
  
 }
 
@@ -291,6 +285,18 @@ footer p a {
   color: #ffffff;
 
 } 
+
+
+/*=======================================
+    MEDIA QUERIES
+==========================================
+
+                                        */
+/*=======================================
+1000px below
+==========================================
+
+                                        */
 
 @media screen and (max-width:1000px) {
   h2 {
@@ -409,7 +415,7 @@ main .hero-section .hero-section-text p:before{
 
     content: '';
     position: absolute;
-  top: 8%;
+   top: 8%;
     left: -5%;
     width: 6em;
     height: 6em;
@@ -556,6 +562,12 @@ footer p a {
 }
 
 
+/*=======================================
+890px below
+==========================================
+
+                                        */
+
 @media screen and (max-width:890px) {
   
 p {
@@ -575,19 +587,13 @@ nav {
 
 
 nav ul {
-
   display: flex;
   
- 
-   
 }
-
-
 
 
 nav ul li {
        list-style: none;
-    
       font-size: 1rem;
       font-family: 'Lato', sans-serif;
       font-weight: 700;
@@ -603,7 +609,6 @@ nav ul li a {
     display: flex;
   text-decoration: none;
   color: #252e3f;
-
 
 }
 
@@ -633,10 +638,8 @@ main .hero-section .hero-section-text {
 main .hero-section h1{
  
   text-align: center;
-   font-size: 4rem;
-      color:#252e3f;
-
-
+  font-size: 4rem;
+  color:#252e3f;
 
 }
 
@@ -774,6 +777,12 @@ footer p a {
 }
 
 
+/*=======================================
+768px below
+==========================================
+
+                                        */
+
 @media screen and (max-width:768px){
 
 
@@ -831,12 +840,12 @@ main .portfolio-section .portfolio-section-grid a {
 }
 
 
-/* footer {
-  margin-bottom: 17rem;
-} */
-
 }
+/*=======================================
+700px below
+==========================================
 
+                                        */
 
 
 @media screen  and (max-width:700px){
@@ -887,6 +896,15 @@ main .about-section .about-section-text p {
 }
 
 
+main .portfolio-section .portfolio-section-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+
+
 main .portfolio-section .portfolio-section-grid a {
   text-transform: uppercase;
   cursor: pointer;
@@ -904,6 +922,12 @@ main .portfolio-section .portfolio-section-grid a {
 
 }
 
+
+/*=======================================
+530px below
+==========================================
+
+                                        */
 
 @media screen  and (max-width:530px) {
 
@@ -938,6 +962,13 @@ main .portfolio-section .portfolio-section-grid a {
 
 
 }
+
+
+/*=======================================
+414px below
+==========================================
+
+                                        */
 
 
 @media screen and (max-width:414px){
@@ -1080,6 +1111,12 @@ main .portfolio-section .portfolio-section-grid a {
 }
 
 
+/*=======================================
+375px below
+==========================================
+
+                                        */
+
 @media screen and (max-width:375px){
 
   nav {
@@ -1205,7 +1242,11 @@ main .portfolio-section .portfolio-section-grid {
 }
 
 
+/*=======================================
+360px below
+==========================================
 
+                                        */
 
 
 @media screen and (max-width:360px){
@@ -1345,6 +1386,13 @@ main .portfolio-section .portfolio-section-grid a {
 
   
 }
+
+
+/*=======================================
+320px below
+==========================================
+
+                                        */
 
 @media screen and (max-width:320px){
 
