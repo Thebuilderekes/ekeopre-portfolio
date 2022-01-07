@@ -466,7 +466,7 @@ main .about-section .about-section-text p {
   color: #f2f5fa;
    margin: 0 auto;
    max-width: 800px;
-   text-align: center;
+   text-align: left;
    line-height: 1.6;
 } 
 
