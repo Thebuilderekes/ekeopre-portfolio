@@ -16,7 +16,7 @@ html {
 
 body {
   width: 100%;
-  background: #f1f0f0;
+  background: #f0ecec;
     font-family: 'Lato', sans-serif;
     
   overflow-x:hidden;
@@ -200,9 +200,8 @@ padding: 3rem 0 5rem 0;
 
 
 main .portfolio-section h2 {
-      font-size: 3rem;
+    font-size: 3rem;
      text-align: center;
-  
      color: #252e3f;
      padding: 1.5rem 0 2rem 0;
 
@@ -212,7 +211,6 @@ main .portfolio-section .portfolio-section-grid {
   display: flex;
   gap: 30px;
   padding: 0 20px;
-
   margin-bottom: 50px;
 
  
@@ -220,12 +218,27 @@ main .portfolio-section .portfolio-section-grid {
 
 main .portfolio-section .portfolio-section-grid img {
   max-width: 100%;
+  object-fit: contain;
   padding-bottom: 1rem;
   transition: all 1000ms;
 }
 
 main .portfolio-section .portfolio-section-grid img:hover {
   transform: translateY(-5px)
+}
+
+main .portfolio-section .portfolio-section-grid figure {
+  background: rgb(230, 227, 227);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 9px 7px 36px 1px rgba(77,76,76,0.75);
+-webkit-box-shadow: 9px 7px 36px 1px rgba(77,76,76,0.75);
+-moz-box-shadow: 9px 7px 36px 1px rgba(77,76,76,0.75);
+}
+
+main .portfolio-section .portfolio-section-grid figure figcaption {
+   line-height: 1.5;
+  padding: 20px 0
 }
 
 main .portfolio-section .portfolio-section-grid a {
@@ -238,7 +251,7 @@ main .portfolio-section .portfolio-section-grid a {
   border-radius: 20px;
   color: #ffffff;
   padding: 7px 10px;
-    margin-right: 20px; 
+ margin-right: 20px; 
 }
 
 main .portfolio-section .portfolio-section-grid a:hover {
