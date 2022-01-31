@@ -218,7 +218,6 @@ main .portfolio-section .portfolio-section-grid {
 
 main .portfolio-section .portfolio-section-grid img {
   max-width: 100%;
-  object-fit: contain;
   padding-bottom: 1rem;
   transition: all 1000ms;
 }
@@ -228,6 +227,7 @@ main .portfolio-section .portfolio-section-grid img:hover {
 }
 
 main .portfolio-section .portfolio-section-grid figure {
+  width: 33.33%;
   background: rgb(230, 227, 227);
   border-radius: 10px;
   padding: 20px;
@@ -796,7 +796,7 @@ footer p a {
 
                                         */
 
-@media screen and (max-width:768px){
+@media screen and (max-width:770px){
 
 
 main .hero-section img {
@@ -838,6 +838,12 @@ main .hero-section .hero-section-text p:after{
 }
 
 
+main .portfolio-section .portfolio-section-grid figure {
+
+  width: 100%;
+
+}
+
 main .portfolio-section .portfolio-section-grid a {
 
   text-transform: uppercase;
@@ -854,6 +860,10 @@ main .portfolio-section .portfolio-section-grid a {
 
 
 }
+
+
+
+
 /*=======================================
 700px below
 ==========================================
@@ -916,6 +926,10 @@ main .portfolio-section .portfolio-section-grid {
     padding: 0 20px;
 }
 
+main .portfolio-section .portfolio-section-grid figure {
+
+  width: 100%;
+}
 
 
 main .portfolio-section .portfolio-section-grid a {
@@ -929,6 +943,7 @@ main .portfolio-section .portfolio-section-grid a {
   color: #ffffff;
   padding: 7px 10px;
     margin-right: 20px; 
+ 
 }
 
 
@@ -1105,6 +1120,11 @@ main .portfolio-section .portfolio-section-grid {
     padding: 0 20px;
 }
 
+main .portfolio-section .portfolio-section-grid figure {
+
+  width: 100%;
+}
+
 
 main .portfolio-section .portfolio-section-grid a {
   text-transform: uppercase;
@@ -1251,6 +1271,11 @@ main .portfolio-section .portfolio-section-grid {
     gap: 30px;
     padding: 0 20px;
 }
+
+main .portfolio-section .portfolio-section-grid figure {
+
+  width: 100%;
+}
   
 }
 
@@ -1380,6 +1405,11 @@ main .portfolio-section .portfolio-section-grid {
     flex-direction: column;
     gap: 30px;
     padding: 0 20px;
+}
+
+main .portfolio-section .portfolio-section-grid figure {
+
+  width: 100%;
 }
 
 
@@ -1520,6 +1550,9 @@ main .portfolio-section .portfolio-section-grid {
     padding: 0 20px;
 }
   
+  main .portfolio-section .portfolio-section-grid figure {
+    width: 100%;
+  }
 
 main .portfolio-section .portfolio-section-grid a {
   text-transform: uppercase;
