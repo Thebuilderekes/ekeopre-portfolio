@@ -255,6 +255,7 @@ main .portfolio-section .portfolio-section-grid .card a {
   color: #ffffff;
   padding: 7px 10px;
  margin-right: 20px; 
+  transition: 0.5s all;
 }
 
 main .portfolio-section .portfolio-section-grid .card a:hover {
