@@ -238,6 +238,7 @@ main .portfolio-section .portfolio-section-grid .card {
 }
 
 main .portfolio-section .portfolio-section-grid .card figure figcaption {
+  color: #252e3f;
    line-height: 1.5;
   padding: 20px 0
 }
