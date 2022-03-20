@@ -1550,7 +1550,7 @@ main .hero-section .hero-section-text p:after{
 
     content: '';
     position: absolute;
-  bottom: -15%;
+  bottom: -17%;
     right: 0%;
     width: 6em;
     height: 6em;
