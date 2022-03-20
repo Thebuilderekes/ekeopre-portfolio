@@ -1550,8 +1550,8 @@ main .hero-section .hero-section-text p:after{
 
     content: '';
     position: absolute;
-  bottom: -17%;
-    right: 0%;
+  bottom: -20%;
+   right: 20%;
     width: 6em;
     height: 6em;
     border-radius: 50%;
