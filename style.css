@@ -276,7 +276,7 @@ background: -moz-linear-gradient(bottom left, #252F3F, #16181C);
 background: linear-gradient(to top right, #252F3F, #16181C);
 }
 
-footer h2 {
+footer h3 {
 
   font-size: 40px;
   color: #ffffff;
@@ -542,7 +542,7 @@ footer {
    background:#252e3f;
 }
 
-footer h2 {
+footer h3 {
 
   font-size: 40px;
   color: #ffffff;
