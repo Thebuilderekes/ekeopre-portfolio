@@ -20,7 +20,12 @@ body {
   overflow-x:hidden;
 }
 
-
+.section-dark-color {
+  background: #252F3F;
+background: -webkit-linear-gradient(bottom left, #252F3F, #16181C);
+background: -moz-linear-gradient(bottom left, #252F3F, #16181C);
+background: linear-gradient(to top right, #252F3F, #16181C);
+}
 
 p {
   font-size: 1.2rem;
@@ -63,10 +68,11 @@ nav ul li {
       padding: 0 0.8em;
       cursor: pointer;
       transition: all 500ms;
-        text-transform: uppercase;
+      
 }
 
 nav ul li a {
+  text-transform: uppercase;
   display: flex;
   text-decoration: none;
   color: #252e3f;
@@ -108,6 +114,7 @@ main .hero-section h1{
 
 main .hero-section h1 span{
      font-size: 4rem;
+  font-weight: 100;
      color: #BE415D;
 }
 
@@ -116,7 +123,7 @@ main .hero-section .hero-section-text p{
      font-weight: 700;
      font-family: 'Poppins', sans-serif;
      color:#BE415D;
-     text-transform: uppercase;
+   
      padding-top: 0.7rem;
 }
 
@@ -158,10 +165,7 @@ main .hero-section img {
 main .about-section {
  
 /* Created with https://www.css-gradient.com */
-background: #252F3F;
-background: -webkit-linear-gradient(bottom left, #252F3F, #16181C);
-background: -moz-linear-gradient(bottom left, #252F3F, #16181C);
-background: linear-gradient(to top right, #252F3F, #16181C);
+
   width: 100%;
   overflow-x: hidden;
 }
@@ -196,6 +200,27 @@ main .about-section .about-section-text p a {
   text-decoration: underline;
   color: #fa7894;
 }
+
+#myBtn {
+display: none; /* Hidden by default */
+position: fixed; /* Fixed/sticky position */
+bottom: 20px; /* Place the button at the bottom of the page */
+right: 30px; /* Place the button 30px from the right */
+z-index: 99; /* Make sure it does not overlap */
+border: none; /* Remove borders */
+outline: none; /* Remove outline */
+background-color: white; /* Set a background color */
+ /* Text color */
+cursor: pointer; /* Add a mouse pointer on hover */
+padding: 15px; /* Some padding */
+border-radius: 10px; /* Rounded corners */
+font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+background-color: #b2aeaf; /* Add a dark-grey background on hover */
+}
+
 
 main .portfolio-section{
 
@@ -282,10 +307,7 @@ main .portfolio-section .portfolio-section-grid .card a:hover {
 footer {
   width: 100%;
 /* Created with https://www.css-gradient.com */
-background: #252F3F;
-background: -webkit-linear-gradient(bottom left, #252F3F, #16181C);
-background: -moz-linear-gradient(bottom left, #252F3F, #16181C);
-background: linear-gradient(to top right, #252F3F, #16181C);
+
 }
 
 footer h3 {
@@ -336,7 +358,7 @@ footer p a {
 
 @media screen and (max-width:1000px) {
   h2 {
-  text-transform: uppercase;
+
   }
 
 p {
@@ -378,7 +400,7 @@ nav ul li {
       padding: 0 0.8em;
       cursor: pointer;
       transition: all 500ms;
-      text-transform: uppercase;
+    
 }
 
 
@@ -437,7 +459,7 @@ main .hero-section .hero-section-text p{
      font-size: 50px;
      font-weight: 700;
       color:#BE415D;
-     text-transform: uppercase;
+   
      padding-top: 1rem;
 
 }
@@ -472,7 +494,6 @@ main .hero-section .hero-section-text:after{
 
 main .about-section {
 
-  background: #252e3f;
   width: 100%
 }
 
@@ -534,7 +555,7 @@ main .portfolio-section .portfolio-section-grid img:hover {
 }
 
 main .portfolio-section .portfolio-section-grid a {
-  text-transform: uppercase;
+
   cursor: pointer;
   font-size: 10px;
   font-weight: 700;
@@ -549,7 +570,7 @@ main .portfolio-section .portfolio-section-grid a {
 
 footer {
   width: 100%;
-   background:#252e3f;
+ 
 }
 
 footer h3 {
@@ -617,7 +638,7 @@ main .hero-section h1{
     font-size: 36px;
     font-weight: 700;
  color:#BE415D;
-    text-transform: uppercase;
+  
     padding-bottom: 2rem;
   }
 
@@ -644,7 +665,7 @@ main .portfolio-section .portfolio-section-grid .card {
 
 main .portfolio-section .portfolio-section-grid .card a {
 
-  text-transform: uppercase;
+
   cursor: pointer;
   font-size: 10px;
   font-weight: 700;
@@ -692,7 +713,7 @@ main .hero-section h1{
     font-size: 36px;
     font-weight: 700;
   color:#BE415D;
-    text-transform: uppercase;
+  
     padding-bottom: 2rem;
   }
 
@@ -720,7 +741,7 @@ main .portfolio-section .portfolio-section-grid .card {
 
 main .portfolio-section .portfolio-section-grid .card a {
 
-  text-transform: uppercase;
+
   cursor: pointer;
   font-size: 10px;
   font-weight: 700;
@@ -774,7 +795,7 @@ nav ul li {
       padding: 0 0.8em;
       cursor: pointer;
       transition: all 500ms;
-        text-transform: uppercase;
+      
 }
 
 
@@ -828,7 +849,7 @@ main .hero-section .hero-section-text p{
      font-size: 36px;
      font-weight: 700;
      color:#252e3f;
-     text-transform: uppercase;
+   
       padding-bottom: 2rem;
 
 }
@@ -861,7 +882,7 @@ main .hero-section .hero-section-text:after{
 
 
 main .about-section {
-  background: #252e3f;
+
   width: 100%
 }
 
@@ -922,7 +943,7 @@ main .portfolio-section .portfolio-section-grid .card figure  img:hover {
 
 
 main .portfolio-section .portfolio-section-grid a {
-  text-transform: uppercase;
+
   cursor: pointer;
   font-size: 10px;
   font-weight: 700;
@@ -938,7 +959,7 @@ main .portfolio-section .portfolio-section-grid a {
 
 footer {
   width: 100%;
-   background:#252e3f;
+  
 }
 
 footer h2 {
@@ -1013,7 +1034,7 @@ main .hero-section h1{
     font-size: 36px;
     font-weight: 700;
  color:#BE415D;
-    text-transform: uppercase;
+  
     padding-bottom: 2rem;
   }
 
@@ -1041,7 +1062,7 @@ main .portfolio-section .portfolio-section-grid .card {
 
 main .portfolio-section .portfolio-section-grid .card a {
 
-  text-transform: uppercase;
+
   cursor: pointer;
   font-size: 10px;
   font-weight: 700;
@@ -1104,6 +1125,18 @@ main .hero-section{
 }
 
 
+main .hero-section .hero-section-text:after{
+    content: '';
+    position: absolute;
+    bottom: -22%;
+    right: 0%;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+  border: 20px solid #252e3f59;
+    z-index: -1;
+    overflow-x: hidden;
+}
 
 
   
@@ -1136,7 +1169,7 @@ main .portfolio-section .portfolio-section-grid .card figure  {
 
 
 main .portfolio-section .portfolio-section-grid .card a {
-  text-transform: uppercase;
+
   cursor: pointer;
   font-size: 10px;
   font-weight: 700;
@@ -1186,7 +1219,7 @@ main .portfolio-section .portfolio-section-grid {
 
 
 main .portfolio-section .portfolio-section-grid .card a {
-  text-transform: uppercase;
+
   cursor: pointer;
   font-size: 10px;
   font-weight: 700;
@@ -1231,7 +1264,7 @@ nav {
     padding: 0 0.8em;
     cursor: pointer;
     transition: all 500ms;
-    text-transform: uppercase;
+  
 
 
   }
@@ -1272,7 +1305,7 @@ main .hero-section h1{
     font-size: 30px;
     font-weight: 700;
    color:#BE415D;
-    text-transform: uppercase;
+  
     padding-bottom: 2rem;
   }
 
@@ -1337,7 +1370,7 @@ main .portfolio-section .portfolio-section-grid .card {
 
 
 main .portfolio-section .portfolio-section-grid a {
-  text-transform: uppercase;
+
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
@@ -1382,7 +1415,7 @@ main .portfolio-section .portfolio-section-grid a {
     padding: 0 0.8em;
     cursor: pointer;
     transition: all 500ms;
-    text-transform: uppercase;
+  
 
 
   }
@@ -1416,7 +1449,7 @@ main .hero-section h1{
     font-size: 30px;
     font-weight: 700;
   color:#BE415D;
-    text-transform: uppercase;
+  
     padding-bottom: 2rem;
   }
 
@@ -1507,7 +1540,7 @@ main .portfolio-section .portfolio-section-grid .card {
     padding: 0 0.8em;
     cursor: pointer;
     transition: all 500ms;
-    text-transform: uppercase;
+  
 
 
   }
@@ -1541,7 +1574,7 @@ main .hero-section h1{
     font-size: 24px;
     font-weight: 700;
    color:#BE415D;
-    text-transform: uppercase;
+  
     padding-bottom: 2rem;
   }
 
@@ -1550,7 +1583,7 @@ main .hero-section h1{
 main .hero-section .hero-section-text:after{
     content: '';
     position: absolute;
-    bottom: -7%;
+    bottom: -20%;
     right: 0%;
     width: 10em;
     height: 10em;
@@ -1612,7 +1645,7 @@ main .portfolio-section .portfolio-section-grid .card {
 
 
 main .portfolio-section .portfolio-section-grid .card a {
-  text-transform: uppercase;
+
   cursor: pointer;
   font-size: 12px;
   font-weight: 700;
@@ -1656,7 +1689,7 @@ main .portfolio-section .portfolio-section-grid .card a {
     padding: 0 0.8em;
     cursor: pointer;
     transition: all 500ms;
-    text-transform: uppercase;
+  
 
 
   }
@@ -1672,18 +1705,7 @@ main .hero-section {
 
 
 
-main .hero-section .hero-section-text:after{
-    content: '';
-    position: absolute;
-    bottom: -7%;
-    right: 0%;
-    width: 10em;
-    height: 10em;
-    border-radius: 50%;
-  border: 20px solid #252e3f59;
-    z-index: -1;
-    overflow-x: hidden;
-}
+
 
 
 main .hero-section img {
@@ -1697,29 +1719,25 @@ main .hero-section img {
     font-size: 20px;
     font-weight: 700;
    color:#BE415D;
-    text-transform: uppercase;
+  
     padding-bottom: 2rem;
   }
 
 
-main .hero-section .hero-section-text p:after{
 
+
+main .hero-section .hero-section-text:after{
     content: '';
     position: absolute;
-  top: 110%;
-    left: 60%;
-    width: 6em;
-    height: 6em;
+    bottom: -26%;
+    right: 0%;
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
-    border: 20px solid #252e3f59;
+  border: 20px solid #252e3f59;
     z-index: -1;
     overflow-x: hidden;
-
-
 }
-
-
-  
 main .about-section .about-section-text {
     padding: 2rem;
 
@@ -1768,7 +1786,7 @@ main .portfolio-section .portfolio-section-grid {
   }
 
 main .portfolio-section .portfolio-section-grid .card a {
-  text-transform: uppercase;
+
   cursor: pointer;
   font-size: 10px;
   font-weight: 700;
