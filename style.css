@@ -120,14 +120,14 @@ main .hero-section .hero-section-text p{
      padding-top: 0.7rem;
 }
 
-main .hero-section .hero-section-text p:before{
+main .hero-section .hero-section-text:before{
 
     content: '';
     position: absolute;
      top: 3%;
-    left: -5%;
-    width: 6em;
-    height: 6em;
+    left: 0;
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
     border: 20px solid rgba(190, 65, 92, 0.377);
     z-index: -1;
@@ -135,13 +135,13 @@ main .hero-section .hero-section-text p:before{
 
 }
 
-main .hero-section .hero-section-text p:after{
+main .hero-section .hero-section-text:after{
     content: '';
     position: absolute;
-    bottom: -15%;
+    bottom: -7%;
     right: 0%;
-    width: 6em;
-    height: 6em;
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
   border: 20px solid #252e3f59;
     z-index: -1;
@@ -442,14 +442,14 @@ main .hero-section .hero-section-text p{
 
 }
 
-main .hero-section .hero-section-text p:before{
+main .hero-section .hero-section-text:before{
 
     content: '';
     position: absolute;
-    top: 8%;
-    left: -5%;
-    width: 6em;
-    height: 6em;
+     top: 3%;
+    left: 0;
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
     border: 20px solid rgba(190, 65, 92, 0.377);
     z-index: -1;
@@ -457,19 +457,17 @@ main .hero-section .hero-section-text p:before{
 
 }
 
-main .hero-section .hero-section-text p:after{
-
+main .hero-section .hero-section-text:after{
     content: '';
     position: absolute;
-    bottom: -15%;
-    right: 1%;
-    width: 6em;
-    height: 6em;
+    bottom: -7%;
+    right: 0%;
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
-    border: 20px solid #252e3f59;
+  border: 20px solid #252e3f59;
     z-index: -1;
     overflow-x: hidden;
-
 }
 
 main .about-section {
@@ -622,20 +620,19 @@ main .hero-section h1{
     text-transform: uppercase;
     padding-bottom: 2rem;
   }
-main .hero-section .hero-section-text p:after{
 
+
+main .hero-section .hero-section-text:after{
     content: '';
     position: absolute;
-  bottom: -3%;
-    right: 1%;
-    width: 6em;
-    height: 6em;
+    bottom: -7%;
+    right: 0%;
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
-    border: 20px solid #252e3f59;
+  border: 20px solid #252e3f59;
     z-index: -1;
     overflow-x: hidden;
-
-
 }
 
 
@@ -698,22 +695,21 @@ main .hero-section h1{
     text-transform: uppercase;
     padding-bottom: 2rem;
   }
-main .hero-section .hero-section-text p:after{
-
-    content: '';
-    position: absolute;
-  bottom: -15%;
-    right: -2%;
-    width: 6em;
-    height: 6em;
-    border-radius: 50%;
-    border: 20px solid #252e3f59;
-    z-index: -1;
-    overflow-x: hidden;
-
 
 }
 
+main .hero-section .hero-section-text:after{
+    content: '';
+    position: absolute;
+    bottom: -7%;
+    right: 0%;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+  border: 20px solid #252e3f59;
+    z-index: -1;
+    overflow-x: hidden;
+}
 
 
 main .portfolio-section .portfolio-section-grid .card {
@@ -848,22 +844,20 @@ main .hero-section .hero-section-text p{
 }
 
 
-  main .hero-section .hero-section-text p:after{
 
+
+main .hero-section .hero-section-text:after{
     content: '';
     position: absolute;
-  bottom: -45%;
+    bottom: -7%;
     right: 0%;
-    width: 6em;
-    height: 6em;
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
-    border: 20px solid #252e3f59;
+  border: 20px solid #252e3f59;
     z-index: -1;
     overflow-x: hidden;
-
-
 }
-
 
 
 main .about-section {
@@ -1005,6 +999,7 @@ main .hero-section h1{
    font-size: 2rem;
    color:#252e3f;
    line-height: 1.5;
+  text-align: center;
 
 }
 
@@ -1021,20 +1016,19 @@ main .hero-section h1{
     text-transform: uppercase;
     padding-bottom: 2rem;
   }
-  main .hero-section .hero-section-text p:after{
 
+
+main .hero-section .hero-section-text:after{
     content: '';
     position: absolute;
-  bottom: -45%;
+    bottom: -7%;
     right: 0%;
-    width: 6em;
-    height: 6em;
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
-    border: 20px solid #252e3f59;
+  border: 20px solid #252e3f59;
     z-index: -1;
     overflow-x: hidden;
-
-
 }
 
 
@@ -1106,7 +1100,7 @@ main .hero-section{
   main .hero-section h1{
    font-size: 2.5rem;
       color:#252e3f;
-
+    text-align: center;
 }
 
 
@@ -1178,7 +1172,7 @@ main .portfolio-section .portfolio-section-grid .card a {
     main .hero-section h1{
    font-size: 2.5rem;
       color:#252e3f
-
+    text-align: center;
 }
 
 
@@ -1292,23 +1286,18 @@ main .about-section .about-section-text h2 {
 
 
 
-main .hero-section .hero-section-text p:after{
-
+main .hero-section .hero-section-text:after{
     content: '';
     position: absolute;
     bottom: -7%;
     right: 0%;
-    width: 6em;
-    height: 6em;
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
-    border: 20px solid #252e3f59;
+  border: 20px solid #252e3f59;
     z-index: -1;
     overflow-x: hidden;
-
-
 }
-
-  
   main .about-section {
     overflow-x: hidden;
 
@@ -1442,20 +1431,18 @@ main .about-section .about-section-text h2 {
 
 
 
-main .hero-section .hero-section-text p:after{
 
+main .hero-section .hero-section-text:after{
     content: '';
     position: absolute;
-  bottom: -7%;
-    right: -4%;
-    width: 6em;
-    height: 6em;
+    bottom: -7%;
+    right: 0%;
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
-    border: 20px solid #252e3f59;
+  border: 20px solid #252e3f59;
     z-index: -1;
     overflow-x: hidden;
-
-
 }
 
 
@@ -1558,20 +1545,19 @@ main .hero-section h1{
     padding-bottom: 2rem;
   }
 
-main .hero-section .hero-section-text p:after{
 
+
+main .hero-section .hero-section-text:after{
     content: '';
     position: absolute;
-  bottom: -20%;
-   right: 1%;
-    width: 6em;
-    height: 6em;
+    bottom: -7%;
+    right: 0%;
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
-    border: 20px solid #252e3f59;
+  border: 20px solid #252e3f59;
     z-index: -1;
     overflow-x: hidden;
-
-
 }
 
 
@@ -1685,16 +1671,19 @@ main .hero-section {
 }
 
 
-  main .hero-section .hero-section-text p:after{
 
+main .hero-section .hero-section-text:after{
     content: '';
     position: absolute;
-     top: 3%;
-    left: -5%;
-  
-
+    bottom: -7%;
+    right: 0%;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+  border: 20px solid #252e3f59;
+    z-index: -1;
+    overflow-x: hidden;
 }
-
 
 
 main .hero-section img {
