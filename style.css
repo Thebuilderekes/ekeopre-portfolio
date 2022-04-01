@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
 }
-
+/* General styles*/
 html {
   width: 100%;
   overflow-x:hidden;
@@ -34,6 +34,9 @@ p {
 a {
   text-decoration: none;
 }
+
+/* NAVIGATION */
+
 nav {
  background: #f1f0f0;
  position: fixed;
@@ -83,6 +86,8 @@ nav ul li a:hover {
   transform: translateY(-5px)
 }
 
+
+/* HERO SECTION STYLES*/
 
 main .hero-section{
   
@@ -162,6 +167,9 @@ main .hero-section img {
   padding: 0 3rem 0 0;
 }
 
+
+/* ABOUT SECTION STYLES */
+
 main .about-section {
  
 /* Created with https://www.css-gradient.com */
@@ -201,6 +209,9 @@ main .about-section .about-section-text p a {
   color: #fa7894;
 }
 
+
+/* scroll up button  */
+
 #myBtn {
 display: none; /* Hidden by default */
 position: fixed; /* Fixed/sticky position */
@@ -221,7 +232,7 @@ font-size: 18px; /* Increase font size */
 background-color: #b2aeaf; /* Add a dark-grey background on hover */
 }
 
-
+/* PORTFOLIO SECTION STYLES  */
 main .portfolio-section{
 
 background: #f1f0f0;
@@ -240,7 +251,10 @@ main .portfolio-section h2 {
 main .portfolio-section .portfolio-section-grid {
 
   display: flex;
-  gap: 30px;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50%;
+  gap: 80px;
   padding: 0 20px;
   margin-bottom: 50px;
    
@@ -278,6 +292,7 @@ main .portfolio-section .portfolio-section-grid .card {
 }
 
 main .portfolio-section .portfolio-section-grid .card figure figcaption {
+   font-family: 'Poppins', sans-serif;
   color: #252e3f;
    line-height: 1.5;
   padding: 20px 0
@@ -287,14 +302,15 @@ main .portfolio-section .portfolio-section-grid .card a {
 
   text-transform: uppercase;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   background: #252e3f;
   border: 1px solid #252e3f;
   border-radius: 20px;
   color: #ffffff;
-  padding: 7px 10px;
+  padding: 10px 10px;
  margin-right: 20px; 
+
   transition: 0.5s all;
 }
 
@@ -303,6 +319,7 @@ main .portfolio-section .portfolio-section-grid .card a:hover {
   border: none;
 }
 
+/* FOOTER SECTION STYLES */
 
 footer {
   width: 100%;
@@ -667,7 +684,7 @@ main .portfolio-section .portfolio-section-grid .card a {
 
 
   cursor: pointer;
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 700;
   background: #252e3f;
   border: 1px solid #252e3f;
@@ -743,7 +760,7 @@ main .portfolio-section .portfolio-section-grid .card a {
 
 
   cursor: pointer;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
   background: #252e3f;
   border: 1px solid #252e3f;
@@ -926,6 +943,7 @@ main .portfolio-section .portfolio-section-grid {
 
   display: flex;
   gap: 30px;
+  
   padding: 0 20px;
 
  
@@ -1159,6 +1177,7 @@ main .portfolio-section .portfolio-section-grid {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 100%;
     padding: 0 20px;
 }
 
@@ -1213,6 +1232,7 @@ main .portfolio-section .portfolio-section-grid .card a {
 main .portfolio-section .portfolio-section-grid {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 30px;
     padding: 0 20px;
 }
@@ -1359,6 +1379,7 @@ main .portfolio-section h2 {
 main .portfolio-section .portfolio-section-grid {
     display: flex;
     flex-direction: column;
+  width: 100%;
     gap: 30px;
     padding: 0 20px;
 }
@@ -1499,6 +1520,7 @@ main .portfolio-section h2 {
 main .portfolio-section .portfolio-section-grid {
     display: flex;
     flex-direction: column;
+  width: 100%;
     gap: 30px;
     padding: 0 20px;
 }
@@ -1633,6 +1655,7 @@ main .portfolio-section h2 {
 main .portfolio-section .portfolio-section-grid {
     display: flex;
     flex-direction: column;
+  width: 100%;
     gap: 30px;
     padding: 0 20px;
 }

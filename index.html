@@ -18,7 +18,10 @@
 	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body id="smooth-wrapper">
+  <div id="smooth-content">
+    
+
 	<header>
 		<nav>
 		<div class="icons top-icons">  
@@ -86,7 +89,7 @@
     <section class="about-section section-dark-color" id="about-section">
         <div class="about-section-text">
             <h2 class="about-section-heading headline" id="about-section-heading headline">About</h2>
-            <p id="about-p tagline">Hello, I'm Ekeopre, a frontend developer from Bayelsa, Nigeria and I'm passionate about creating interactive websites and web experiences. My journey into the web development began during the pandemic when I became curious about how websites were built. I started learning on Youtube and I have since moved on to developing some pretty awesome websites.<br> <br>I have degree in computer science and experience using tools like <span>HTML5, CSS3, Bootstrap, Responsive design, TailwindCSS, Git version control and the JavaScript programming language.</span>  <br> <br>When I'm not developing websites or learning, I enjoy writing and sharing my thoughts with the online community on <a href="https://twitter.com/iamthebuilder__" target="_blank"> twitter</a> about learning rescources for code and being productive. I'm always looking for opportunities to improve my skills so I'm open to remote and onsite web development opportunities. <br> <br> Let's have chat sometime, I'll be looking forward to working with you.</p>
+            <p id="about-p tagline">Hello, I'm Ekeopre, a frontend developer from Bayelsa, Nigeria and I'm passionate about creating interactive websites and web experiences. My journey into the web development began during the pandemic when I became curious about how websites were built. While I couldn't afford to attend a bootcamp, I began my learning on YouTube and I have since moved on to create some pretty awesome websites.<br> <br>I have degree in computer science and experience using tools like <span>HTML5, CSS3, Bootstrap, Responsive design, TailwindCSS, Git version control and the JavaScript programming language </span>and also an eye for aesthetics in web design.  <br> <br>When I'm not developing websites or learning, I enjoy writing and sharing my thoughts with the online community on <a href="https://twitter.com/iamthebuilder__" target="_blank"> twitter</a> about  ways to be productive and rescources for learning how to code. I'm always looking for opportunities to improve my skills so I'm open to remote and onsite web development opportunities. <br> <br>Now that you know a little bit about me, Let's have chat sometime, I'll be looking forward to sharing more with you.</p>
         </div>
    </section>
 
@@ -212,7 +215,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script>
-     const heroText = document.getElementById("hero-section-heading");
+     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+      let smoother = ScrollSmoother.create({
+      wrapper = '#smooth-wrapper',
+        content = '#smooth-content',
+        smooth = 2,
+        effects = true,
+        
+      })
       gsap.from('img', {opacity: 0, duration: 1, y:30});
        gsap.from('#hero-section-heading', {opacity: 0, duration: 2, y:30});
       gsap.from('#hero-p', {opacity: 0, duration: 3, y:30});
@@ -224,5 +235,6 @@
     ScrollReveal().reveal(target, options);
   </script>
      <script src="script.js"></script>
+      </div>
 </body>
  </html>
