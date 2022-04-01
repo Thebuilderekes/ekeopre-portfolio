@@ -1583,7 +1583,7 @@ main .hero-section h1{
 main .hero-section .hero-section-text:after{
     content: '';
     position: absolute;
-    bottom: -20%;
+    bottom: -17%;
     right: 0%;
     width: 10em;
     height: 10em;
