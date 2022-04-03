@@ -6,6 +6,19 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+
+  --fs-extralarge: 4rem; /*64px*/
+  --fs-large: 3.125rem;    /* 50px*/
+  --fs-semilarge: 2.5rem;     /* 40px*/
+  --fs-double: 2rem;      /* 32px*/
+  --fs-medium: 1.25rem;   /*20px*/
+  --fs-semimedium: 1.125rem /*18px*/
+  --fs-normal: 1rem; /*16px*/
+}
+
+
 /* General styles*/
 html {
   width: 100%;
@@ -99,9 +112,9 @@ main .hero-section{
   font-family: 'Lato', sans-serif;
 }
 
-main .hero-section-text span{
-     font-size: 4rem;
-     font-weight: 700;
+main .hero-section-text .ml3{
+     font-size: var(--fs-extralarge);
+     font-weight: 600;
      color: #BE415D; 
 }
 
@@ -111,26 +124,26 @@ main .hero-section .hero-section-text {
 }
 
 main .hero-section h1{
-   font-size: 2.5rem;
+   font-size: var( --fs-double);
    font-family: 'Poppins', sans-serif;
+  font-weight: 500;
    color:#252e3f;
    line-height: 1.5;
 }
 
-main .hero-section h1 span{
-     font-size: 4rem;
-  font-weight: 100;
-     color: #BE415D;
+main .hero-section h1 .small-text {
+font-size: var(--fs-medium);
 }
 
 main .hero-section .hero-section-text p{
-     font-size: 50px;
+     font-size: var(--fs-large);
      font-weight: 700;
      font-family: 'Poppins', sans-serif;
      color:#BE415D;
    
      padding-top: 0.7rem;
 }
+
 
 main .hero-section .hero-section-text:before{
 
@@ -184,7 +197,7 @@ main .about-section .about-section-text{
 }
 
 main .about-section .about-section-text h2 {
-     font-size: 3rem;
+     font-size: var( --fs-large);;
      text-align: center;
      color: #ffffff;
      padding-bottom: 1rem;
@@ -192,7 +205,7 @@ main .about-section .about-section-text h2 {
 }
 
 main .about-section .about-section-text p {
-  font-size: 20px;
+  font-size: var(--fs-medium);
   font-family: 'Poppins', sans-serif;
   color: #f2f5fa;
    margin: 0 auto;
@@ -209,6 +222,17 @@ main .about-section .about-section-text p a {
   color: #fa7894;
 }
 
+main .about-section .about-section-text ul {
+  list-style: none;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  
+}
+main .about-section .about-section-text ul li {
+
+  padding: 0 35px;
+}
 
 /* scroll up button  */
 
@@ -225,7 +249,7 @@ background-color: white; /* Set a background color */
 cursor: pointer; /* Add a mouse pointer on hover */
 padding: 15px; /* Some padding */
 border-radius: 10px; /* Rounded corners */
-font-size: 18px; /* Increase font size */
+font-size: var( --fs-semimedium); /* Increase font size */
 }
 
 #myBtn:hover {
@@ -242,7 +266,7 @@ padding: 3rem 0 3rem 0;
 
 
 main .portfolio-section h2 {
-    font-size: 3rem;
+    font-size: var( --fs-large);;
      text-align: center;
      color: #252e3f;
      padding: 1.5rem 0 2rem 0;
@@ -302,7 +326,7 @@ main .portfolio-section .portfolio-section-grid .card a {
 
   text-transform: uppercase;
   cursor: pointer;
-  font-size: 18px;
+  font-size: var( --fs-semimedium);
   font-weight: 700;
   background: #252e3f;
   border: 1px solid #252e3f;
@@ -329,7 +353,7 @@ footer {
 
 footer h3 {
 
-  font-size: 40px;
+  font-size: var(--fs-semilarge);
   color: #ffffff;
   text-align: center;
   padding: 3rem
@@ -459,21 +483,15 @@ main .hero-section .hero-section-text {
 }
 
 main .hero-section h1{
-   font-size: 2rem;
+   font-size: var( --fs-double);
    color:#252e3f;
    line-height: 1.5;
 
 }
 
-main .hero-section h1 span{
-       font-size: 4rem;
-     color: #BE415D;
-
-
-}
 
 main .hero-section .hero-section-text p{
-     font-size: 50px;
+     font-size: var(--fs-large);
      font-weight: 700;
       color:#BE415D;
    
@@ -520,7 +538,7 @@ main .about-section .about-section-text{
 }
 
 main .about-section .about-section-text h2 {
-     font-size: 3rem;
+     font-size: var( --fs-large);;
      text-align: center;
      color: #ffffff;
      padding-bottom: 1rem;
@@ -528,7 +546,7 @@ main .about-section .about-section-text h2 {
 }
 
 main .about-section .about-section-text p {
-  font-size: 20px;
+  font-size: var(--fs-medium);
   color: #f2f5fa;
    margin: 0 auto;
    max-width: 800px;
@@ -545,7 +563,7 @@ padding: 3rem 0 5rem 0;
 
 
 main .portfolio-section h2 {
-      font-size: 3rem;
+      font-size: var( --fs-large);;
      text-align: center;
   
      color: #252e3f;
@@ -592,7 +610,7 @@ footer {
 
 footer h3 {
 
-  font-size: 40px;
+  font-size: var(--fs-semilarge);
   color: #ffffff;
   text-align: center;
   padding: 3rem
@@ -644,7 +662,7 @@ main .hero-section img {
 
 
 main .hero-section h1{
-   font-size: 2rem;
+   font-size: var( --fs-double);
    color:#252e3f;
    line-height: 1.5;
 
@@ -684,7 +702,7 @@ main .portfolio-section .portfolio-section-grid .card a {
 
 
   cursor: pointer;
-  font-size: 16px;
+  font-size: var( --fs-normal);
   font-weight: 700;
   background: #252e3f;
   border: 1px solid #252e3f;
@@ -719,7 +737,7 @@ main .hero-section img {
 
 
 main .hero-section h1{
-   font-size: 2rem;
+   font-size: var( --fs-double);
    color:#252e3f;
    line-height: 1.5;
 
@@ -851,7 +869,7 @@ main .hero-section .hero-section-text {
 main .hero-section h1{
  
   text-align: center;
-  font-size: 4rem;
+  font-size: var( --fs-extralarge);
   color:#252e3f;
 
 }
@@ -909,7 +927,7 @@ main .about-section .about-section-text{
 }
 
 main .about-section .about-section-text h2 {
-     font-size: 3rem;
+     font-size: var( --fs-large);;
      text-align: center;
      color: #ffffff;
      padding-bottom: 1rem;
@@ -917,7 +935,7 @@ main .about-section .about-section-text h2 {
 }
 
 main .about-section .about-section-text p {
-  font-size: 20px;
+  font-size: var(--fs-medium);
   color: #f2f5fa;
    margin: 0 auto;
    max-width: 800px;
@@ -933,7 +951,7 @@ padding: 3rem 0 5rem 0;
 
 
 main .portfolio-section h2 {
-      font-size: 3rem;
+      font-size: var( --fs-large);;
 
      color: #252e3f;
      padding: 2rem 0 1.5rem  0;
@@ -982,7 +1000,7 @@ footer {
 
 footer h2 {
 
-  font-size: 40px;
+  font-size: var(--fs-semilarge);
   color: #ffffff;
   text-align: center;
   padding: 3rem
@@ -1035,7 +1053,7 @@ main .hero-section img {
 
 
 main .hero-section h1{
-   font-size: 2rem;
+   font-size: var( --fs-double);
    color:#252e3f;
    line-height: 1.5;
   text-align: center;
@@ -1137,7 +1155,7 @@ main .hero-section{
 }
   
   main .hero-section h1{
-   font-size: 2.5rem;
+   font-size: var( --fs-semilarge);;
       color:#252e3f;
     text-align: center;
 }
@@ -1165,7 +1183,7 @@ main .about-section .about-section-text {
 
 
 main .about-section .about-section-text p {
-    font-size: 18px;
+    font-size: var( --fs-semimedium);
     color: #f2f5fa;
     margin: 0 auto;
     /* max-width: 800px; */
@@ -1222,11 +1240,19 @@ main .portfolio-section .portfolio-section-grid .card a {
 }
 
     main .hero-section h1{
-   font-size: 2.5rem;
+   font-size: var( --fs-semilarge);;
       color:#252e3f
     text-align: center;
 }
 
+  main .about-section .about-section-text ul {
+
+
+  display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+  
+}
 
 
 main .portfolio-section .portfolio-section-grid {
@@ -1330,7 +1356,7 @@ main .hero-section h1{
   }
 
 main .about-section .about-section-text h2 {
-    font-size: 2rem;
+    font-size: var( --fs-double);
     text-align: center;
     color: #ffffff;
     padding-bottom: 1rem;
@@ -1360,7 +1386,7 @@ main .hero-section .hero-section-text:after{
 
 
 main .about-section .about-section-text p {
-    font-size: 18px;
+    font-size: var( --fs-semimedium);
     color: #f2f5fa;
     margin: 0 auto;
     line-height: 1.6;
@@ -1368,7 +1394,7 @@ main .about-section .about-section-text p {
 }
 
 main .portfolio-section h2 {
-    font-size: 2rem;
+    font-size: var( --fs-double);
     text-align: center;
 
     color: #252e3f;
@@ -1476,7 +1502,7 @@ main .hero-section h1{
 
 
 main .about-section .about-section-text h2 {
-    font-size: 2rem;
+    font-size: var( --fs-double);
     text-align: center;
     color: #ffffff;
     padding-bottom: 1rem;
@@ -1501,7 +1527,7 @@ main .hero-section .hero-section-text:after{
 
 
 main .about-section .about-section-text p {
-    font-size: 16px;
+    font-size: var( --fs-normal);
     color: #f2f5fa;
     margin: 0 auto;
     line-height: 1.6;
@@ -1509,7 +1535,7 @@ main .about-section .about-section-text p {
 }
 
 main .portfolio-section h2 {
-    font-size: 2rem;
+    font-size: var( --fs-double);
     text-align: center;
  
     color: #252e3f;
@@ -1625,7 +1651,7 @@ main .about-section .about-section-text {
 
 
 main .about-section .about-section-text h2 {
-    font-size: 2rem;
+    font-size: var( --fs-double);
     text-align: center;
     color: #ffffff;
     padding-top: 2.5rem;
@@ -1635,7 +1661,7 @@ main .about-section .about-section-text h2 {
 
 
 main .about-section .about-section-text p {
-    font-size: 16px;
+    font-size: var( --fs-normal);
     color: #f2f5fa;
     margin: 0 auto;
     /* max-width: 800px; */
@@ -1644,7 +1670,7 @@ main .about-section .about-section-text p {
 }
 
 main .portfolio-section h2 {
-    font-size: 2rem;
+    font-size: var( --fs-double);
     text-align: center;
   
     color: #252e3f;
@@ -1739,7 +1765,7 @@ main .hero-section img {
 
   main .hero-section .hero-section-text p {
     text-align: center;
-    font-size: 20px;
+    font-size: var(--fs-medium);
     font-weight: 700;
    color:#BE415D;
   
@@ -1769,7 +1795,7 @@ main .about-section .about-section-text {
 
 
 main .about-section .about-section-text h2 {
-    font-size: 2rem;
+    font-size: var( --fs-double);
     text-align: center;
     color: #ffffff;
     padding-top: 2.5rem;
@@ -1779,7 +1805,7 @@ main .about-section .about-section-text h2 {
 
 
 main .about-section .about-section-text p {
-    font-size: 16px;
+    font-size: var( --fs-normal);
     color: #f2f5fa;
     margin: 0 auto;
 
@@ -1789,7 +1815,7 @@ main .about-section .about-section-text p {
 }
 
 main .portfolio-section h2 {
-    font-size: 2rem;
+    font-size: var( --fs-double);
     text-align: center;
   
     color: #252e3f;
