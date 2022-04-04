@@ -40,6 +40,8 @@ background: -moz-linear-gradient(bottom left, #252F3F, #16181C);
 background: linear-gradient(to top right, #252F3F, #16181C);
 }
 
+
+
 p {
   font-size: 1.2rem;
 }
@@ -47,6 +49,16 @@ p {
 a {
   text-decoration: none;
 }
+
+h2 {
+  text-transform: uppercase;
+  padding-bottom: 1.5rem;
+}
+
+/* .section-padding {
+
+  padding: 1rem 0;
+} */
 
 /* NAVIGATION */
 
@@ -124,6 +136,8 @@ main .hero-section .hero-section-text {
 }
 
 main .hero-section h1{
+    padding: 0;
+  margin: 0;
    font-size: var( --fs-double);
    font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -136,12 +150,13 @@ font-size: var(--fs-medium);
 }
 
 main .hero-section .hero-section-text p{
+     padding: 0;
+     margin: 0;
      font-size: var(--fs-large);
      font-weight: 700;
      font-family: 'Poppins', sans-serif;
      color:#BE415D;
-   
-     padding-top: 0.7rem;
+  
 }
 
 
@@ -189,18 +204,18 @@ main .about-section {
 
   width: 100%;
   overflow-x: hidden;
+  padding: 4rem 0;
 }
 
 main .about-section .about-section-text{
 
- padding: 5rem;
+ padding: 0 5rem;
 }
 
 main .about-section .about-section-text h2 {
      font-size: var( --fs-large);;
      text-align: center;
      color: #ffffff;
-     padding-bottom: 1rem;
   
 }
 
@@ -260,7 +275,7 @@ background-color: #b2aeaf; /* Add a dark-grey background on hover */
 main .portfolio-section{
 
 background: #f1f0f0;
-padding: 3rem 0 3rem 0;
+padding: 4rem 0;
 
 }
 
@@ -269,7 +284,7 @@ main .portfolio-section h2 {
     font-size: var( --fs-large);;
      text-align: center;
      color: #252e3f;
-     padding: 1.5rem 0 2rem 0;
+   
 
 }
 main .portfolio-section .portfolio-section-grid {
@@ -557,7 +572,7 @@ main .about-section .about-section-text p {
 
 main .portfolio-section{
 background: #f1f0f0;
-padding: 3rem 0 5rem 0;
+
 
 }
 
@@ -565,9 +580,8 @@ padding: 3rem 0 5rem 0;
 main .portfolio-section h2 {
       font-size: var( --fs-large);;
      text-align: center;
-  
      color: #252e3f;
-     padding: 1.5rem 0 2rem 0;
+     padding: 1.5rem 0 1.5rem 0;
 
 }
 main .portfolio-section .portfolio-section-grid {
@@ -954,7 +968,7 @@ main .portfolio-section h2 {
       font-size: var( --fs-large);;
 
      color: #252e3f;
-     padding: 2rem 0 1.5rem  0;
+     padding: 1rem 0 1rem  0;
 
 }
 main .portfolio-section .portfolio-section-grid {
@@ -1034,6 +1048,15 @@ footer p a {
 
 }
 
+  @media screen and (max-width:786px){
+
+      main .about-section .about-section-text ul {
+        flex-wrap: wrap;
+       justify-content: space-evenly;
+}
+
+  }
+
 
 
 /*=======================================
@@ -1047,7 +1070,7 @@ footer p a {
 
 main .hero-section img {
      min-width: 50%;
-    padding: 0px 0rem 0 0;
+ 
 
 }
 
@@ -1250,7 +1273,7 @@ main .portfolio-section .portfolio-section-grid .card a {
 
   display: flex;
     flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   
 }
 
@@ -1383,14 +1406,18 @@ main .hero-section .hero-section-text:after{
 }
 
 
-
-
 main .about-section .about-section-text p {
     font-size: var( --fs-semimedium);
     color: #f2f5fa;
     margin: 0 auto;
     line-height: 1.6;
 
+}
+
+
+  main .about-section .about-section-text ul {
+
+   justify-content: space-between;
 }
 
 main .portfolio-section h2 {
@@ -1427,9 +1454,7 @@ main .portfolio-section .portfolio-section-grid a {
   color: #ffffff;
   padding: 7px 10px;
     margin-right: 20px; 
-}
-
-  
+}  
 
 }
 
@@ -1539,7 +1564,7 @@ main .portfolio-section h2 {
     text-align: center;
  
     color: #252e3f;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
 
 }
 
@@ -1607,7 +1632,6 @@ main .hero-section {
 main .hero-section img {
      min-width: 60%;
     padding: 0px 0rem 0 0;
-
 }
 
 main .hero-section h1{
@@ -1616,13 +1640,11 @@ main .hero-section h1{
    line-height: 1.5;
 
 }
-
   main .hero-section .hero-section-text p {
     text-align: center;
     font-size: 24px;
     font-weight: 700;
-   color:#BE415D;
-  
+    color:#BE415D;
     padding-bottom: 2rem;
   }
 
@@ -1636,7 +1658,7 @@ main .hero-section .hero-section-text:after{
     width: 10em;
     height: 10em;
     border-radius: 50%;
-  border: 20px solid #252e3f59;
+    border: 20px solid #252e3f59;
     z-index: -1;
     overflow-x: hidden;
 }
@@ -1644,7 +1666,7 @@ main .hero-section .hero-section-text:after{
 
   
 main .about-section .about-section-text {
-    padding: 2rem;
+    padding: 0 2rem;
 
 }
 
@@ -1654,7 +1676,7 @@ main .about-section .about-section-text h2 {
     font-size: var( --fs-double);
     text-align: center;
     color: #ffffff;
-    padding-top: 2.5rem;
+
     padding-bottom: 1rem;
 
 }
@@ -1664,10 +1686,15 @@ main .about-section .about-section-text p {
     font-size: var( --fs-normal);
     color: #f2f5fa;
     margin: 0 auto;
-    /* max-width: 800px; */
     line-height: 1.6;
-
 }
+
+  main .about-section .about-section-text ul li {
+  padding: 0 20px;
+}
+
+
+  
 
 main .portfolio-section h2 {
     font-size: var( --fs-double);
@@ -1808,12 +1835,11 @@ main .about-section .about-section-text p {
     font-size: var( --fs-normal);
     color: #f2f5fa;
     margin: 0 auto;
-
-    /* max-width: 800px; */
     line-height: 1.6;
-
 }
 
+
+  
 main .portfolio-section h2 {
     font-size: var( --fs-double);
     text-align: center;
