@@ -1666,7 +1666,7 @@ main .hero-section h1{
 main .hero-section .hero-section-text:after{
     content: '';
     position: absolute;
-    bottom: -17%;
+    bottom: -19%;
     right: 0%;
     width: 10em;
     height: 10em;
