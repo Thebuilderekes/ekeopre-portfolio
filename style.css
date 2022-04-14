@@ -478,7 +478,7 @@ main .hero-section{
   flex-direction: row-reverse;
   justify-content: space-evenly;
   align-items: center;
-  padding: 6rem 0 7rem 3rem;
+  padding: 6rem 0 7rem 0;
   font-family: 'Lato', sans-serif;
 
 }
@@ -494,7 +494,7 @@ main .hero-section img {
 }
 
 main .hero-section .hero-section-text {
-  margin: 0  1em 0 2em;
+  margin: 0  1em 0 1em;
 }
 
 main .hero-section h1{
@@ -1255,7 +1255,9 @@ main .portfolio-section .portfolio-section-grid .card a {
 
 @media screen  and (max-width:530px) {
 
-
+ main .hero-section-text{
+   text-align: center;
+ }
 
   main .hero-section-text span{
    
@@ -1355,7 +1357,9 @@ main .hero-section img {
 
 }
 
-
+ main .hero-section-text{
+   text-align: center;
+ }
 
   main .hero-section-text span{
    
@@ -1516,6 +1520,10 @@ main .hero-section h1{
 
 }
 
+   main .hero-section-text{
+   text-align: center;
+ }
+
   main .hero-section .hero-section-text p {
     text-align: center;
     font-size: 30px;
@@ -1640,6 +1648,11 @@ main .hero-section h1{
    line-height: 1.5;
 
 }
+
+   main .hero-section-text{
+   text-align: center;
+ }
+  
   main .hero-section .hero-section-text p {
     text-align: center;
     font-size: 24px;
@@ -1776,7 +1789,9 @@ main .hero-section {
 }
 
 
-
+ main .hero-section-text{
+   text-align: center;
+ }
 
 
 
