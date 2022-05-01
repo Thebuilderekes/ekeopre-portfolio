@@ -125,7 +125,7 @@ main .hero-section{
 }
 
 main .hero-section-text .ml3{
-     font-size: var(--fs-extralarge);
+     font-size: var(--fs-large);
      font-weight: 600;
      color: #BE415D; 
 }
@@ -133,6 +133,7 @@ main .hero-section-text .ml3{
 main .hero-section .hero-section-text {
 /*   margin: 0  1em 0 2em; */
   background: transparent;
+  text-transform: uppercase;
 }
 
 main .hero-section h1{
@@ -140,7 +141,7 @@ main .hero-section h1{
   margin: 0;
    font-size: var( --fs-double);
    font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
    color:#252e3f;
    line-height: 1.5;
 }
@@ -1666,7 +1667,7 @@ main .hero-section h1{
 main .hero-section .hero-section-text:after{
     content: '';
     position: absolute;
-    bottom: -23%;
+    bottom: -19%;
     right: 0%;
     width: 10em;
     height: 10em;
