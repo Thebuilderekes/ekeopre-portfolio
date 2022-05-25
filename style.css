@@ -14,8 +14,10 @@
   --fs-semilarge: 2.5rem;     /* 40px*/
   --fs-double: 2rem;      /* 32px*/
   --fs-medium: 1.25rem;   /*20px*/
-  --fs-semimedium: 1.125rem /*18px*/
+  --fs-semimedium: 1.125rem; /*18px*/
   --fs-normal: 1rem; /*16px*/
+  --span-darkcolor : #252F3F;
+  
 }
 
 
@@ -39,6 +41,11 @@ background: -webkit-linear-gradient(bottom left, #252F3F, #16181C);
 background: -moz-linear-gradient(bottom left, #252F3F, #16181C);
 background: linear-gradient(to top right, #252F3F, #16181C);
 }
+
+.dark-color {
+  color: #252F3F;
+}
+
 
 
 
@@ -133,13 +140,14 @@ main .hero-section-text .ml3{
 main .hero-section .hero-section-text {
 /*   margin: 0  1em 0 2em; */
   background: transparent;
-  text-transform: uppercase;
+ 
 }
 
 main .hero-section h1{
     padding: 0;
   margin: 0;
-   font-size: var( --fs-double);
+   text-transform: uppercase;
+   font-size: var( --fs-semilarge);
    font-family: 'Poppins', sans-serif;
   font-weight: 600;
    color:#252e3f;
@@ -154,9 +162,10 @@ main .hero-section .hero-section-text p{
      padding: 0;
      margin: 0;
      font-size: var(--fs-large);
-     font-weight: 700;
+     font-weight: 500;
      font-family: 'Poppins', sans-serif;
      color:#BE415D;
+ 
   
 }
 
@@ -195,6 +204,12 @@ main .hero-section img {
   max-width: 30%;
   padding: 0 3rem 0 0;
 }
+
+
+
+
+
+
 
 
 /* ABOUT SECTION STYLES */
@@ -240,14 +255,26 @@ main .about-section .about-section-text p a {
 
 main .about-section .about-section-text ul {
   list-style: none;
-  padding: 50px 0;
+  padding: 50px 15%;
   display: flex;
   justify-content: center;
+  justify-content: space-evenly;
   
 }
 main .about-section .about-section-text ul li {
 
   padding: 0 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+main .about-section .about-section-text ul li span {
+    font-size: var(--fs-medium);
+    font-weight: 700;
+    color: #ffffff;
 }
 
 /* scroll up button  */
@@ -495,6 +522,7 @@ main .hero-section img {
 }
 
 main .hero-section .hero-section-text {
+  text-align: center;
   margin: 0  1em 0 1em;
 }
 
@@ -863,7 +891,6 @@ main .hero-section{
   flex-direction: column-reverse;
   justify-content: space-evenly;
   align-items: center;
-  padding: 30rem 0 30rem 3rem;
   font-family: 'Lato', sans-serif;
   height:100vh ;
 
@@ -1052,7 +1079,6 @@ footer p a {
   @media screen and (max-width:786px){
 
       main .about-section .about-section-text ul {
-        flex-wrap: wrap;
        justify-content: space-evenly;
 }
 
@@ -1167,7 +1193,6 @@ main .hero-section{
   flex-direction: column-reverse;
   justify-content: space-evenly;
   align-items: center;
-  padding: 25rem 0 25rem 3rem;
   font-family: 'Lato', sans-serif;
   height:100vh ;
 
@@ -1275,11 +1300,16 @@ main .portfolio-section .portfolio-section-grid .card a {
 
 
   display: flex;
-    flex-wrap: wrap;
-  justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 15%;
   
 }
 
+  main .about-section .about-section-text ul li {
+      padding: 30px 35px;
+
+  }
 
 main .portfolio-section .portfolio-section-grid {
     display: flex;
@@ -1422,8 +1452,13 @@ main .about-section .about-section-text p {
 
   main .about-section .about-section-text ul {
 
-   justify-content: space-between;
+   justify-content: space-around;
+    padding: 20px 15%;
 }
+
+   main .about-section .about-section-text ul li {
+     padding: 20px 35px;
+   }
 
 main .portfolio-section h2 {
     font-size: var( --fs-double);
@@ -1686,7 +1721,6 @@ main .about-section .about-section-text h2 {
     font-size: var( --fs-double);
     text-align: center;
     color: #ffffff;
-
     padding-bottom: 1rem;
 
 }
@@ -1718,13 +1752,12 @@ main .portfolio-section h2 {
 main .portfolio-section .portfolio-section-grid {
     display: flex;
     flex-direction: column;
-  width: 100%;
+    width: 100%;
     gap: 30px;
     padding: 0 20px;
 }
 
 main .portfolio-section .portfolio-section-grid .card {
-
   width: 100%;
 }
 
@@ -1806,8 +1839,7 @@ main .hero-section img {
     text-align: center;
     font-size: var(--fs-medium);
     font-weight: 700;
-   color:#BE415D;
-  
+    color:#BE415D;
     padding-bottom: 2rem;
   }
 
