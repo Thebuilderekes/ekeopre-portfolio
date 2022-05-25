@@ -255,10 +255,12 @@ main .about-section .about-section-text p a {
 
 main .about-section .about-section-text ul {
   list-style: none;
-  padding: 50px 15%;
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
+  padding: 40px 15%;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 30px;
   
 }
 main .about-section .about-section-text ul li {
@@ -351,11 +353,19 @@ main .portfolio-section .portfolio-section-grid figure img:hover {
 main .portfolio-section .portfolio-section-grid .card {
   width: 33.33%;
   background: rgb(230, 227, 227);
-  border-radius: 10px;
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+  
   padding: 20px;
-  box-shadow: 9px 7px 36px 1px rgba(77,76,76,0.75);
--webkit-box-shadow: 9px 7px 36px 1px rgba(77,76,76,0.75);
--moz-box-shadow: 9px 7px 36px 1px rgba(77,76,76,0.75);
+ box-shadow: 6px 2px 28px -2px rgba(128,122,122,0.75);
+-webkit-box-shadow: 6px 2px 28px -2px rgba(128,122,122,0.75);
+-moz-box-shadow: 6px 2px 28px -2px rgba(128,122,122,0.75);
+}
+
+
+main .portfolio-section .portfolio-section-grid .card figure img {
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
 }
 
 main .portfolio-section .portfolio-section-grid .card figure figcaption {
@@ -1298,10 +1308,11 @@ main .portfolio-section .portfolio-section-grid .card a {
 
   main .about-section .about-section-text ul {
 
-
-  display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 20px;
     padding: 20px 15%;
   
 }
