@@ -75,10 +75,7 @@ h2 {
   padding-bottom: 1.5rem;
 }
 
-/* .section-padding {
 
-  padding: 1rem 0;
-} */
 
 /* NAVIGATION */
 
@@ -143,6 +140,7 @@ main .hero-section{
   align-items: center;
   font-family: 'Lato', sans-serif;
 }
+
 
 main .hero-section-text .ml3{
      font-size: var(--fs-large);
@@ -221,11 +219,7 @@ main .hero-section img {
 
 
 
-
-
-
-
-/* ABOUT SECTION STYLES */
+/*================ ABOUT SECTION STYLES =========*/
 
 main .about-section {
  
@@ -268,7 +262,7 @@ main .about-section .about-section-text p a {
 
 main .about-section .about-section-text ul {
   list-style: none;
-  padding: 40px 15%;
+margin: 40px 10%;
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(2, 1fr);
@@ -314,7 +308,7 @@ font-size: var( --fs-semimedium); /* Increase font size */
 background-color: #b2aeaf; /* Add a dark-grey background on hover */
 }
 
-/* PORTFOLIO SECTION STYLES  */
+/*========================== PORTFOLIO SECTION STYLES ===================== */
 main .portfolio-section{
 
 background: #f1f0f0;
@@ -408,11 +402,11 @@ main .portfolio-section .portfolio-section-grid .card a:hover {
   border: none;
 }
 
-/* FOOTER SECTION STYLES */
+/*============== FOOTER SECTION STYLES=================================*/
 
 footer {
   width: 100%;
-/* Created with https://www.css-gradient.com */
+
 
 }
 
@@ -453,9 +447,56 @@ footer p a {
 
 /*=======================================
     MEDIA QUERIES
-==========================================
+========================================== */
 
-                                        */
+
+
+
+/*=======================================
+1400px above
+========================================= */
+
+
+@media screen and (min-width:1400px) {
+
+main .hero-section h1{
+   padding: 0;
+   margin: 0;
+   text-transform: uppercase;
+   font-size: var( --fs-large);
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+   color:#252e3f;
+   line-height: 1.5;
+}
+
+main .hero-section h1 .small-text {
+font-size: var(--fs-medium);
+}
+
+  
+
+main .hero-section .hero-section-text p{
+     padding: 0;
+     margin: 0;
+     font-size: var(--fs-extralarge);
+     font-weight: 400;
+     font-family: 'Poppins', sans-serif;
+     color:#BE415D;
+ 
+  
+}
+
+  main .about-section .about-section-text ul {
+  list-style: none;
+  padding: 40px 15%;
+  }
+
+}
+
+
+
+
 /*=======================================
 1000px below
 ==========================================
