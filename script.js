@@ -1,22 +1,8 @@
-// Wrap every letter in a span
-// var textWrapper = document.querySelector('.ml3');
-// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-// anime.timeline({loop: true})
-//   .add({
-//     targets: '.ml3 .letter',
-//     opacity: [0,1],
-//     easing: "easeInOutQuad",
-//     duration: 2250,
-//     delay: (el, i) => 150 * (i+1)
-//   }).add({
-//     targets: '.ml3',
-//     opacity: 0,
-//     duration: 1000,
-//     easing: "easeOutExpo",
-//     delay: 1000
-//   });
-
+const heading1 = document.getElementById("hero-section-heading");
+const tagLine = document.getElementById("dark-color");
+const projectSection = document.getElementById("project-section");
+const projectSectionHeading = document.getElementById("project-section-heading");
+const body =  document.getElementById("smooth-wrapper");
 
 
 //Back to top button:
@@ -38,6 +24,20 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
 document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+function darkMode() {
+  const body =  document.getElementById("smooth-wrapper");
+  body.style.backgroundColor = "#000000"
+   heading1.style.color = "#f0ecec"  
+   heading2.style.color = "#f0ecec"  
+   tagLine.style.color = "#f0ecec" 
+  projectSectionHeading.style.color = "#f0ecec"
+  
+      }
+      function lightMode() {
+    
+     
+      }
 
 
 
