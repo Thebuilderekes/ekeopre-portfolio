@@ -20,6 +20,17 @@
   
 }
 
+::-webkit-scrollbar {
+  width: 30px;
+}
+
+::-webkit-scrollbar-track {
+  margin: 15rem 0;
+  background: #eee;
+  border-radius: 15px
+}
+
+
 
 /* General styles*/
 html {
