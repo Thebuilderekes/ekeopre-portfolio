@@ -25,19 +25,19 @@ function topFunction() {
 document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-function darkMode() {
-  const body =  document.getElementById("smooth-wrapper");
-  body.style.backgroundColor = "#000000"
-   heading1.style.color = "#f0ecec"  
-   heading2.style.color = "#f0ecec"  
-   tagLine.style.color = "#f0ecec" 
-  projectSectionHeading.style.color = "#f0ecec"
+// function darkMode() {
+//   const body =  document.getElementById("smooth-wrapper");
+//   body.style.backgroundColor = "#000000"
+//    heading1.style.color = "#f0ecec"  
+//    heading2.style.color = "#f0ecec"  
+//    tagLine.style.color = "#f0ecec" 
+//   projectSectionHeading.style.color = "#f0ecec"
   
-      }
-      function lightMode() {
+//       }
+//       function lightMode() {
     
      
-      }
+//       }
 
 
 
