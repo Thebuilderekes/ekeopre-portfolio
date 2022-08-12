@@ -1416,8 +1416,19 @@ main .project-section .project-section-grid .card a {
   padding: 7px 10px;
     margin-right: 20px; 
 }
+
+￼main .project-section .portfolio-large-text2 {
+
+display: none;
+  
+} 
+ main .project-section .portfolio-large-text1 {
+
+   display:none;
+ } 
+  
 }
-/*=======================================
+/*======================================
 320px below
 ==========================================
                                         */
