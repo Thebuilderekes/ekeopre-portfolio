@@ -1374,6 +1374,11 @@ main .hero-section h1{
 main .about-section .about-section-text {
     padding: 0 2rem;
 }
+
+  main .about-section .about-large-text {
+
+   display:none; 
+  } 
 main .about-section .about-section-text h2 {
     font-size: var( --fs-double);
     text-align: center;
