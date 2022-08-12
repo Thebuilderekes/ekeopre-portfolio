@@ -1,4 +1,3 @@
-
 *, 
 *::before, 
 *::after {
@@ -6,9 +5,7 @@
   margin: 0;
   padding: 0;
 }
-
 :root {
-
   --fs-extralarge: 4rem; /*64px*/
   --fs-large: 3.125rem;    /* 50px*/
   --fs-semilarge: 2.5rem;     /* 40px*/
@@ -18,21 +15,7 @@
   --fs-normal: 1rem; /*16px*/
   --fs-small: 0.825rem
   --span-darkcolor : #252F3F;
-  
 }
-
-::-webkit-scrollbar {
-  width: 30px;
-}
-
-::-webkit-scrollbar-track {
-  margin: 15rem 0;
-  background: #eee;
-  border-radius: 15px
-}
-
-
-
 /* General styles*/
 html {
   width: 100%;
@@ -55,14 +38,11 @@ background: linear-gradient(to top right, #252F3F, #16181C);
 }
 
 .section-v-padding {
-
-  padding: 4rem 0;
-  
+  padding: 4rem 0;  
 }
 
 .container {
-
-  padding-inline: 8.5rem;
+ padding-inline: 8.5rem;
 }
 
 .dark-color {
@@ -73,20 +53,14 @@ background: linear-gradient(to top right, #252F3F, #16181C);
   background: #252F3F;
 }
 
-
 .dark-mode {
   background-color:  #252F3F;
   color:  #f0ecec;
 }
 
 .light-mode {
-
-  background: #f0ecec;
-  color
-  
+  background: #f0ecec; 
 }
-
-
 
 p {
   font-size: 1.2rem;
@@ -100,45 +74,37 @@ h2 {
   padding-bottom: 1.5rem;
 }
 
-
-
 /* NAVIGATION */
 
 nav {
  background: #f1f0f0;
  position: fixed;
  top: 0;
- right: 0;
  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 8em;
+  padding: 1rem 8rem;
   border-bottom: 1px solid #d8dce0;
   z-index: 10;
 }
-
 
 nav .top-icons a svg {
   margin: 0 0 0 20px;
 }
 
 nav ul {
-
   display: flex;
-     
 }
 
 nav ul li {
-       list-style: none;
-    
+      list-style: none;
       font-size: 1rem;
       font-family: 'Lato', sans-serif;
       font-weight: 700;
       padding: 0 0.8rem;
       cursor: pointer;
       transition: all 500ms;
-      
 }
 
 nav ul li a {
@@ -156,16 +122,14 @@ nav ul li a:hover {
 nav ul li button i {
   font-size: 30px;
 }
+
 nav ul li button {
   border: none;
-  
   padding: 5px;
 }
 
 /* HERO SECTION STYLES*/
-
 main .hero-section{
-  
   height: 100vh ;
   display: flex;
   flex-direction: row-reverse;
@@ -173,7 +137,6 @@ main .hero-section{
   align-items: center;
   font-family: 'Lato', sans-serif;
 }
-
 
 main .hero-section-text .ml3{
      font-size: var(--fs-large);
@@ -184,7 +147,6 @@ main .hero-section-text .ml3{
 main .hero-section .hero-section-text {
 /*   margin: 0  1em 0 2em; */
   background: transparent;
- 
 }
 
 main .hero-section h1{
@@ -204,14 +166,11 @@ font-size: var(--fs-medium);
 main .hero-section .hero-section-text p {
      padding: 0;
      margin: 0;
-     font-size: var(--fs-semilarge);
+     font-size: var(--fs-double);
      font-weight: 500;
      font-family: 'Poppins', sans-serif;
      color:#BE415D;
- 
 }
-
-
 
 main .hero-section img {
   border-radius: 50% 30%;
@@ -219,26 +178,17 @@ main .hero-section img {
   padding: 0 3rem 0 0;
 }
 
-
-
-
 /*================ ABOUT SECTION STYLES =========*/
-
 main .about-section {
- 
 /* Created with https://www.css-gradient.com */
-
   width: 100%;
   overflow-x: hidden;
-
 }
-
 
 main .about-section .about-section-text h2 {
      font-size: var( --fs-large);;
      text-align: center;
      color: #ffffff;
-  
 }
 
 main .about-section .about-section-text p {
@@ -249,33 +199,30 @@ main .about-section .about-section-text p {
    line-height: 1.6;
 } 
 
-
 main .about-section .about-section-text p span {
   color: #fa7894;
 }
+
 main .about-section .about-section-text p a {
   text-decoration: underline;
   color: #fa7894;
 }
 
-
 main .about-section .tech-heading {
   padding: 4rem 0;
-
 }
 
 main .about-section ul {
   list-style: none;
-margin: 15px 10%;
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 50px;
-  
+  margin: 15px 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 50px;
 }
-main .about-section ul li {
 
+main .about-section ul li {
   padding: 0 35px;
   display: flex;
   flex-direction: column;
@@ -290,13 +237,7 @@ main .about-section ul li span {
     color: #ffffff;
 }
 
-
-
-
-
-
 /* scroll up button  */
-
 #myBtn {
 display: none; /* Hidden by default */
 position: fixed; /* Fixed/sticky position */
@@ -317,18 +258,14 @@ font-size: var( --fs-semimedium); /* Increase font size */
 background-color: #b2aeaf; /* Add a dark-grey background on hover */
 }
 
-/*========================== project SECTION STYLES ===================== */
-
-
+/*========================== PROJECT SECTION STYLES ===================== */
 main .project-section h2 {
     font-size: var( --fs-large);;
      text-align: center;
      color: #252e3f;
-   
-
 }
-main .project-section .project-section-grid {
 
+main .project-section .project-section-grid {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -336,8 +273,6 @@ main .project-section .project-section-grid {
   gap: 80px;
   padding: 0 20px;
   margin-bottom: 50px;
-   
- 
 }
 
 main .project-section .project-section-grid .card{
@@ -345,9 +280,7 @@ main .project-section .project-section-grid .card{
 }
 
 main .project-section .project-section-grid .card:hover {
-
-  transform: translateY(-5px);
-  
+  transform: translateY(-5px); 
 }
 
 main .project-section .project-section-grid .card figure img {
@@ -371,7 +304,6 @@ main .project-section .project-section-grid .card {
 -moz-box-shadow: 6px 2px 28px -2px rgba(128,122,122,0.75);
 }
 
-
 main .project-section .project-section-grid .card figure img {
    border-top-right-radius: 10px;
    border-top-left-radius: 10px;
@@ -385,7 +317,6 @@ main .project-section .project-section-grid .card figure figcaption {
 }
 
 main .project-section .project-section-grid .card a {
-
   text-transform: uppercase;
   cursor: pointer;
   font-size: var( --fs-semimedium);
@@ -396,7 +327,6 @@ main .project-section .project-section-grid .card a {
   color: #ffffff;
   padding: 10px 10px;
  margin-right: 20px; 
-
   transition: 0.5s all;
 }
 
@@ -406,15 +336,11 @@ main .project-section .project-section-grid .card a:hover {
 }
 
 /*============== FOOTER SECTION STYLES=================================*/
-
 footer {
   width: 100%;
-
-
 }
 
 footer h3 {
-
   font-size: var(--fs-semilarge);
   color: #ffffff;
   text-align: center;
@@ -432,7 +358,6 @@ footer .icons {
 footer .icons svg {
   margin-left: 20px;
    margin-right: 20px;
-  
 }
 
 footer p {
@@ -445,24 +370,18 @@ footer p {
 footer p a {
   text-decoration: underline;
   color: #ffffff;
-
 } 
-
-
 /*=======================================
     MEDIA QUERIES
 ========================================== */
-
-
-
-
 /*=======================================
 1400px above
 ========================================= */
-
-
 @media screen and (min-width:1400px) {
-
+nav {
+  padding: 1rem 15rem;
+}
+  
 main .hero-section h1{
    font-size: var( --fs-large);
    font-family: 'Poppins', sans-serif;
@@ -470,52 +389,41 @@ main .hero-section h1{
    color:#252e3f;
    line-height: 1.5;
 }
-
-main .hero-section h1 .small-text {
-font-size: var(--fs-medium);
-}
-
   
-
 main .hero-section .hero-section-text p{
      padding: 0;
      margin: 0;
-     font-size: var(--fs-extralarge);
+     font-size: var(--fs-double);
      font-weight: 400;
      font-family: 'Poppins', sans-serif;
      color:#BE415D;
- 
-  
 }
-
+  
+.container {
+padding-inline: 15rem
+}
+  
   main .about-section ul {
   list-style: none;
   padding: 40px 15%;
   }
-
 }
-
-
-
-
 /*=======================================
 1000px below
 ==========================================
-
                                         */
-
 @media screen and (max-width:1000px) {
   h2 {
-
   }
-
+  
 p {
   font-size: 1.2rem;
 }
-
+  
 a {
   text-decoration: none;
 }
+  
 nav {
  background: #f1f0f0;
  position: fixed;
@@ -529,17 +437,15 @@ nav {
   border-bottom: 1px solid #d8dce0;
   z-index: 10;
 }
-
+  
 nav .top-icons a svg {
   margin: 0 0 0 20px;
 }
-
+  
 nav ul {
-
   display: flex;
-     
 }
-
+  
 nav ul li {
      list-style: none;
      font-size: 1rem;
@@ -548,22 +454,19 @@ nav ul li {
       padding: 0 0.8em;
       cursor: pointer;
       transition: all 500ms;
-    
 }
-
-
+  
 nav ul li a {
   display: flex;
   text-decoration: none;
   color: #252e3f;
   transition: 0.5s all;
 }
-
-
+  
 nav ul li a:hover {
   transform: translateY(-5px)
 }
-
+  
 main .hero-section{
   height: 100vh ;
   display: flex;
@@ -572,99 +475,76 @@ main .hero-section{
   align-items: center;
   padding: 6rem 0 7rem 0;
   font-family: 'Lato', sans-serif;
-
 }
-
+  
 main .hero-section img {
-
-
   border-radius: 50% 30%;
   max-width: 30%;
-  
   padding: 0 3rem 0 0;
-
 }
-
+  
 main .hero-section .hero-section-text {
   margin: 0  1em 0 1em;
 }
-
 main .hero-section h1{
    font-size: var( --fs-double);
    color:#252e3f;
    line-height: 1.5;
-
 }
-
-
+  
 main .hero-section .hero-section-text p{
      font-size: var(--fs-large);
-     font-weight: 700;
-      color:#BE415D;
-   
+     font-weight: 400;
+     color:#BE415D;
      padding-top: 1rem;
-
 }
-
+  
 main .about-section {
-
-  width: 100%
+  width: 100%;
 }
-
-
+  
 main .about-section .about-section-text h2 {
      font-size: var( --fs-large);;
      text-align: center;
      color: #ffffff;
      padding-bottom: 1rem;
-  
 }
-
+  
 main .about-section .about-section-text p {
   font-size: var(--fs-medium);
   color: #f2f5fa;
    margin: 0 auto;
    max-width: 800px;
-
    line-height: 1.6;
 } 
-
-
+  
 main .project-section{
 background: #f1f0f0;
-
-
 }
-
-
+  
 main .project-section h2 {
       font-size: var( --fs-large);;
      text-align: center;
      color: #252e3f;
      padding: 1.5rem 0 1.5rem 0;
-
 }
+  
 main .project-section .project-section-grid {
-
   display: flex;
   gap: 30px;
   padding: 0 20px;
-
- 
 }
-
+  
 main .project-section .project-section-grid img {
   max-width: 100%;
   padding-bottom: 1rem;
   transition: all 1000ms;
 }
-
+  
 main .project-section .project-section-grid img:hover {
   transform: translateY(-5px)
 }
-
 main .project-section .project-section-grid a {
-
   cursor: pointer;
   font-size: 10px;
   font-weight: 700;
@@ -675,21 +555,18 @@ main .project-section .project-section-grid a {
   padding: 7px 10px;
     margin-right: 20px; 
 }
-
-
+  
 footer {
   width: 100%;
- 
 }
-
+  
 footer h3 {
-
   font-size: var(--fs-semilarge);
   color: #ffffff;
   text-align: center;
   padding: 3rem
 }
-
+  
 footer .icons {
     margin: 0 auto;
   display: flex;
@@ -697,71 +574,50 @@ footer .icons {
   align-items: center;
   padding-bottom: 3rem;
 }
-
+  
 footer .icons svg {
   margin-left: 20px;
    margin-right: 20px;
-  
 }
-
+  
 footer p {
    color: #ffffff;
   text-align: center;
   padding-bottom: 1rem;
 }
-
 footer p a {
   text-decoration: underline;
   color: #ffffff;
-
 } 
-
 }
-
-
 /*=======================================
 1076px below
 ==========================================
-
                                         */
-
 @media screen and (max-width:1076px){
-
-
 main .hero-section img {
    /*   min-width: 50%; */
     padding: 0px 0rem 0 0;
-
 }
-
-
+  
 main .hero-section h1{
    font-size: var( --fs-double);
    color:#252e3f;
    line-height: 1.5;
-
 }
-
+  
   main .hero-section .hero-section-text p {
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 400;
  color:#BE415D;
-  
     padding-bottom: 2rem;
   }
-
-
-
-
+  
 main .project-section .project-section-grid .card {
-
   width: 100%;
-
 }
-
+  
 main .project-section .project-section-grid .card a {
-
-
   cursor: pointer;
   font-size: var( --fs-normal);
   font-weight: 700;
@@ -772,59 +628,36 @@ main .project-section .project-section-grid .card a {
   padding: 7px 10px;
     margin-right: 20px; 
 }
-
-
+  
 }
-
-
-
-
-
-
 /*=======================================
 900px below
 ==========================================
-
                                         */
-
 @media screen and (max-width:900px){
-
-
 main .hero-section img {
    /*   min-width: 50%; */
     padding: 0px 0rem 0 0;
-
 }
-
-
+  
 main .hero-section h1{
    font-size: var( --fs-double);
    color:#252e3f;
    line-height: 1.5;
-
 }
-
-  main .hero-section .hero-section-text p {
-
-    font-size: 36px;
-    font-weight: 700;
-  color:#BE415D;
   
+  main .hero-section .hero-section-text p {
+    font-size: 36px;
+    font-weight: 400;
+    color:#BE415D;
     padding-bottom: 2rem;
   }
-
 }
-
-
 main .project-section .project-section-grid .card {
-
   width: 100%;
-
 }
 
 main .project-section .project-section-grid .card a {
-
-
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
@@ -836,24 +669,17 @@ main .project-section .project-section-grid .card a {
     margin-right: 20px; 
 }
 
-
 }
-
-
 /*=======================================
 890px below
 ==========================================
-
                                         */
-
 @media screen and (max-width:890px) {
-  
 p {
   font-size: 1.2rem;
 }
-
+  
 nav {
-
  position: fixed;
  top: 0;
  right: 0;
@@ -862,14 +688,11 @@ nav {
   justify-content: space-between;
   padding: 1.5em 3em;
 }
-
-
+  
 nav ul {
   display: flex;
-  
 }
-
-
+  
 nav ul li {
        list-style: none;
       font-size: 1rem;
@@ -878,19 +701,14 @@ nav ul li {
       padding: 0 0.8em;
       cursor: pointer;
       transition: all 500ms;
-      
 }
-
-
-
+  
 nav ul li a {
     display: flex;
   text-decoration: none;
   color: #252e3f;
-
 }
-
-
+  
 main .hero-section{
   display: flex;
   flex-direction: column-reverse;
@@ -898,60 +716,48 @@ main .hero-section{
   align-items: center;
   font-family: 'Lato', sans-serif;
   height:100vh ;
-
 }
-
+  
 main .hero-section img {
   border-radius: 50% 30%;
   width: 60%;
   padding: 0 3rem 0 0;
-
 }
-
+  
 main .hero-section .hero-section-text {
   margin: 2em  0 2em 0;
 }
-
+  
 main .hero-section h1{
- 
   font-size: var( --fs-extralarge);
   color:#252e3f;
-
 }
-
+  
 main .hero-section-text span{
-   
     margin: 0 auto;
 }
-
+  
 main .hero-section .hero-section-text p{
      font-size: 36px;
-     font-weight: 700;
+     font-weight: 400;
      color:#252e3f;
-   
       padding-bottom: 2rem;
-
 }
-
 /* 
 main .about-section {
-
   width: 100%
 } */
-
 main .about-section .about-section-text{
-
  padding: 5rem;
 }
-
+  
 main .about-section .about-section-text h2 {
      font-size: var( --fs-large);;
      text-align: center;
      color: #ffffff;
      padding-bottom: 1rem;
-  
 }
-
+  
 main .about-section .about-section-text p {
   font-size: var(--fs-medium);
   color: #f2f5fa;
@@ -959,45 +765,33 @@ main .about-section .about-section-text p {
    max-width: 800px;
    line-height: 1.6;
 } 
-
-
+  
 main .project-section{
-
 padding: 3rem 0 5rem 0;
-
 }
-
-
+  
 main .project-section h2 {
       font-size: var( --fs-large);;
-
      color: #252e3f;
      padding: 1rem 0 1rem  0;
-
 }
+  
 main .project-section .project-section-grid {
-
   display: flex;
   gap: 30px;
-  
   padding: 0 20px;
-
- 
 }
-
+  
 main .project-section .project-section-grid .card figure img {
   max-width: 100%;
   padding-bottom: 1rem;
   transition: all 1000ms;
 }
-
-main .project-section .project-section-grid .card figure  img:hover {
+   .project-section .project-section-grid .card figure  img:hover {
   transform: translateY(-5px)
 }
-
-
+  
 main .project-section .project-section-grid a {
-
   cursor: pointer;
   font-size: 10px;
   font-weight: 700;
@@ -1008,22 +802,16 @@ main .project-section .project-section-grid a {
   padding: 7px 10px;
   margin-right: 20px; 
 }
-
-
-
+  
 footer {
   width: 100%;
-  
 }
-
 footer h2 {
-
   font-size: var(--fs-semilarge);
   color: #ffffff;
   text-align: center;
   padding: 3rem
 }
-
 footer .icons {
     margin: 0 auto;
   display: flex;
@@ -1031,81 +819,47 @@ footer .icons {
   align-items: center;
   padding-bottom: 3rem;
 }
-
 footer .icons svg {
   margin-left: 20px;
    margin-right: 20px;
-  
 }
-
 footer p {
    color: #ffffff;
   text-align: center;
 }
-
 footer p a {
   text-decoration: underline;
   color: #ffffff;
-
 } 
-
-
 }
-
   @media screen and (max-width:786px){
-
       main .about-section ul {
        justify-content: space-evenly;
 }
-
   }
-
-
-
 /*=======================================
 768px below
 ==========================================
-
                                         */
-
 @media screen and (max-width:770px){
-
-
 main .hero-section img {
      min-width: 50%;
- 
-
 }
-
-
 main .hero-section h1{
    font-size: var( --fs-double);
    color:#252e3f;
    line-height: 1.5;
-
 }
-
-
   main .hero-section .hero-section-text p {
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 400;
  color:#BE415D;
-  
     padding-bottom: 2rem;
   }
-
-
-
-
 main .project-section .project-section-grid .card {
-
   width: 100%;
-
 }
-
 main .project-section .project-section-grid .card a {
-
-
   cursor: pointer;
   font-size: 10px;
   font-weight: 700;
@@ -1116,24 +870,13 @@ main .project-section .project-section-grid .card a {
   padding: 7px 10px;
     margin-right: 20px; 
 }
-
-
 }
-
-
-
-
 /*=======================================
 700px below
 ==========================================
-
                                         */
-
-
 @media screen  and (max-width:700px){
-
    nav {
-
     position: fixed;
     top: 0;
     right: 0;
@@ -1143,8 +886,6 @@ main .project-section .project-section-grid .card a {
     padding: 1.5em 3em;
     flex-direction: column;
   }
-
-  
 main .hero-section{
   display: flex;
   flex-direction: column-reverse;
@@ -1152,30 +893,18 @@ main .hero-section{
   align-items: center;
   font-family: 'Lato', sans-serif;
   height:100vh ;
-
 }
-
-  
   main .hero-section h1{
    font-size: var( --fs-semilarge);;
       color:#252e3f;
     text-align: left;
 }
-
-  
  main .hero-section .hero-section-text p {
-
      text-align: left;
-     
    }
-
-  
 main .about-section .about-section-text {
     padding: 2rem;
-
 }
-
-
 main .about-section .about-section-text p {
     font-size: var( --fs-semimedium);
     color: #f2f5fa;
@@ -1183,8 +912,6 @@ main .about-section .about-section-text p {
     /* max-width: 800px; */
     line-height: 1.6;
 }
-
-
 main .project-section .project-section-grid {
     display: flex;
     flex-direction: column;
@@ -1192,15 +919,10 @@ main .project-section .project-section-grid {
     width: 100%;
     padding: 0 20px;
 }
-
 main .project-section .project-section-grid .card figure  {
-
   width: 100%;
 }
-
-
 main .project-section .project-section-grid .card a {
-
   cursor: pointer;
   font-size: 10px;
   font-weight: 700;
@@ -1210,45 +932,28 @@ main .project-section .project-section-grid .card a {
   color: #ffffff;
   padding: 7px 10px;
     margin-right: 20px; 
- 
 }
-
-
-
 }
-
-
 /*=======================================
 530px below
 ==========================================
-
                                         */
-
 @media screen  and (max-width:530px) {
-
-
     main .hero-section h1{
    font-size: var( --fs-semilarge);;
       color:#252e3f
-
 }
-
   main .about-section ul {
-
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-template-rows: repeat(3, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 20px;
     padding: 20px 15%;
-  
 }
-
   main .about-section ul li {
       padding: 30px 35px;
-
   }
-
 main .project-section .project-section-grid {
     display: flex;
     flex-direction: column;
@@ -1256,10 +961,7 @@ main .project-section .project-section-grid {
     gap: 30px;
     padding: 0 20px;
 }
-
-
 main .project-section .project-section-grid .card a {
-
   cursor: pointer;
   font-size: 10px;
   font-weight: 700;
@@ -1270,32 +972,23 @@ main .project-section .project-section-grid .card a {
   padding: 7px 10px;
     margin-right: 20px; 
 }
-
-
 }
-
-
 /*=======================================
 414px below
 ==========================================
-
                                         */
-
-
 @media screen and (max-width:414px){
-
 nav {
-
     position: fixed;
     top: 0;
     right: 0;
     width: 100%;
     display: flex;
+     gap: 1rem;
     justify-content: space-between;
     padding: 0.5em 3em;
     flex-direction: column;
   }
-
   nav ul li {
     list-style: none;
     font-size: 0.9rem;
@@ -1304,9 +997,6 @@ nav {
     padding: 0 0.8em;
     cursor: pointer;
     transition: all 500ms;
-  
-
-
   }
 main .hero-section {
     display: flex;
@@ -1317,74 +1007,48 @@ main .hero-section {
     font-family: 'Lato', sans-serif;
     height: 100vh;
 }
-
-
-
 main .hero-section img {
      min-width: 50%;
     padding: 0px 0rem 0 0;
-
 }
-
-
 main .hero-section h1{
    font-size: 1.5rem;
    color:#252e3f;
    line-height: 1.5;
-
 }
-
   main .hero-section .hero-section-text p {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 400;
    color:#BE415D;
-  
     padding-bottom: 2rem;
   }
-
 main .about-section .about-section-text h2 {
     font-size: var( --fs-double);
-  
     color: #ffffff;
     padding-bottom: 1rem;
-
 }
-
-
   main .about-section {
     overflow-x: hidden;
-
 }
-
-
 main .about-section .about-section-text p {
     font-size: var( --fs-semimedium);
     color: #f2f5fa;
     margin: 0 auto;
     line-height: 1.6;
-
 }
-
-
   main .about-section ul {
-
    justify-content: space-around;
     padding: 20px 15%;
 }
-
    main .about-section ul li {
      padding: 20px 35px;
    }
-
 main .project-section h2 {
     font-size: var( --fs-double);
     text-align: center;
-
     color: #252e3f;
     padding: 1.5rem 0;
-
 }
-
 main .project-section .project-section-grid {
     display: flex;
     flex-direction: column;
@@ -1392,15 +1056,10 @@ main .project-section .project-section-grid {
     gap: 30px;
     padding: 0 20px;
 }
-
 main .project-section .project-section-grid .card {
-
   width: 100%;
 }
-
-
 main .project-section .project-section-grid a {
-
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
@@ -1411,20 +1070,13 @@ main .project-section .project-section-grid a {
   padding: 7px 10px;
     margin-right: 20px; 
 }  
-
 }
-
-
 /*=======================================
 375px below
 ==========================================
-
                                         */
-
 @media screen and (max-width:375px){
-
   nav {
-  
     position: fixed;
     top: 0;
     right: 0;
@@ -1434,7 +1086,6 @@ main .project-section .project-section-grid a {
     padding: 0.5em 3em;
     flex-direction: column;
   }
-
   nav ul li {
     list-style: none;
     font-size: 0.9rem;
@@ -1443,9 +1094,6 @@ main .project-section .project-section-grid a {
     padding: 0 0.8em;
     cursor: pointer;
     transition: all 500ms;
-  
-
-
   }
 main .hero-section {
     display: flex;
@@ -1456,69 +1104,42 @@ main .hero-section {
     font-family: 'Lato', sans-serif;
     height: 100vh;
 }
-
-
-
 main .hero-section img {
      min-width: 50%;
     padding: 0px 0rem 0 0;
-
 }
-
 main .hero-section h1{
    font-size: 1.5rem;
    color:#252e3f;
    line-height: 1.5;
-
 }
-
-
-
   main .hero-section .hero-section-text p {
     font-size: 30px;
     font-weight: 700;
-  color:#BE415D;
-  
+    color:#BE415D;
     padding-bottom: 2rem;
   }
-
-
 main .about-section .about-section-text h2 {
     font-size: var( --fs-double);
     text-align: center;
     color: #ffffff;
     padding-bottom: 1rem;
-
 }
-
-
-
-
-
-
 main .about-section .about-section-text p {
     font-size: var( --fs-normal);
     color: #f2f5fa;
     margin: 0 auto;
     line-height: 1.6;
-
 }
-
-
-
   main .about-section ul {
-   
     grid-row-gap: 50px;
   }
 main .project-section h2 {
     font-size: var( --fs-double);
     text-align: center;
- 
     color: #252e3f;
     padding: 1rem 0;
-
 }
-
 main .project-section .project-section-grid {
     display: flex;
     flex-direction: column;
@@ -1526,26 +1147,16 @@ main .project-section .project-section-grid {
     gap: 30px;
     padding: 0 20px;
 }
-
 main .project-section .project-section-grid .card {
-
   width: 100%;
 }
-  
 }
-
-
 /*=======================================
 360px below
 ==========================================
-
                                         */
-
-
 @media screen and (max-width:360px){
-
   nav {
-  
     position: fixed;
     top: 0;
     right: 0;
@@ -1555,7 +1166,6 @@ main .project-section .project-section-grid .card {
     padding: 0.5em 3em;
     flex-direction: column;
   }
-
   nav ul li {
     list-style: none;
     font-size: 0.9rem;
@@ -1564,9 +1174,6 @@ main .project-section .project-section-grid .card {
     padding: 0 0.8em;
     cursor: pointer;
     transition: all 500ms;
-  
-
-
   }
 main .hero-section {
     display: flex;
@@ -1577,68 +1184,45 @@ main .hero-section {
     font-family: 'Lato', sans-serif;
     height: 100vh;
 }
-
-
-
 main .hero-section img {
      min-width: 60%;
     padding: 0px 0rem 0 0;
 }
-
 main .hero-section h1{
    font-size: 1.5rem;
    color:#252e3f;
    line-height: 1.5;
-
 }
-
   main .hero-section .hero-section-text p {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 400;
     color:#BE415D;
     padding-bottom: 2rem;
   }
-
-
-
- 
 main .about-section .about-section-text {
     padding: 0 2rem;
-
 }
-
 main .about-section .about-section-text h2 {
     font-size: var( --fs-double);
     text-align: center;
     color: #ffffff;
     padding-bottom: 1rem;
-
 }
-
-
 main .about-section .about-section-text p {
     font-size: var( --fs-normal);
     color: #f2f5fa;
     margin: 0 auto;
     line-height: 1.6;
 }
-
   main .about-section ul li {
   padding: 0 20px;
 }
-
-
-  
-
 main .project-section h2 {
     font-size: var( --fs-double);
     text-align: center;
-  
     color: #252e3f;
     padding: 1.5rem 0;
-
 }
-
 main .project-section .project-section-grid {
     display: flex;
     flex-direction: column;
@@ -1646,15 +1230,10 @@ main .project-section .project-section-grid {
     gap: 30px;
     padding: 0 20px;
 }
-
 main .project-section .project-section-grid .card {
   width: 100%;
 }
-
-
-
 main .project-section .project-section-grid .card a {
-
   cursor: pointer;
   font-size: 12px;
   font-weight: 700;
@@ -1665,21 +1244,13 @@ main .project-section .project-section-grid .card a {
   padding: 7px 10px;
     margin-right: 20px; 
 }
-
-  
 }
-
-
 /*=======================================
 320px below
 ==========================================
-
                                         */
-
 @media screen and (max-width:320px){
-
   nav {
-  
     position: fixed;
     top: 0;
     right: 0;
@@ -1689,7 +1260,6 @@ main .project-section .project-section-grid .card a {
     padding: 0.5em 3em;
     flex-direction: column;
   }
-
   nav ul li {
     list-style: none;
     font-size: 0.9rem;
@@ -1698,88 +1268,57 @@ main .project-section .project-section-grid .card a {
     padding: 0 0.8em;
     cursor: pointer;
     transition: all 500ms;
-  
-
-
   }
 main .hero-section {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
-
      padding: 20rem 0 20rem 0rem;
     font-family: 'Lato', sans-serif;
     height: 100vh;
 }
-
-
-
-
-
 main .hero-section img {
      min-width: 60%;
     padding: 0px 0rem 0 0;
-
 }
-
   main .hero-section .hero-section-text p {
     font-size: var(--fs-medium);
     font-weight: 700;
     color:#BE415D;
     padding-bottom: 2rem;
   }
-
-
-
-
 main .about-section .about-section-text {
     padding: 2rem;
-
 }
-
-
-
 main .about-section .about-section-text h2 {
     font-size: var( --fs-double);
     text-align: center;
     color: #ffffff;
     padding-top: 2.5rem;
     padding-bottom: 1rem;
-
 }
-
-
 main .about-section .about-section-text p {
     font-size: var( --fs-normal);
     color: #f2f5fa;
     margin: 0 auto;
     line-height: 1.6;
 }
-
-
-  
 main .project-section h2 {
     font-size: var( --fs-double);
     text-align: center;
-  
     color: #252e3f;
     padding: 1.5rem 0;
-
 }
-
 main .project-section .project-section-grid {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 0 20px;
 }
-  
   main .project-section .project-section-grid .card {
     width: 100%;
   }
-
 main .project-section .project-section-grid .card a {
-
   cursor: pointer;
   font-size: 10px;
   font-weight: 700;
@@ -1790,10 +1329,4 @@ main .project-section .project-section-grid .card a {
   padding: 7px 10px;
     margin-right: 20px; 
 }
-
-
-
-
-
 }
-
