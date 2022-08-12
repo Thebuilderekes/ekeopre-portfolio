@@ -183,6 +183,19 @@ main .about-section {
 /* Created with https://www.css-gradient.com */
   width: 100%;
   overflow-x: hidden;
+  position: relative;
+}
+
+main .about-section .about-large-text {
+  position: absolute;
+  font-size: 180px;
+  text-align: center;
+  transform: rotate(90deg);
+  top: 26%;
+  left: -17%;
+  font-weight: 700;
+  opacity: 0.1;
+  color: #ffffff;
 }
 
 main .about-section .about-section-text h2 {
@@ -259,6 +272,36 @@ background-color: #b2aeaf; /* Add a dark-grey background on hover */
 }
 
 /*========================== PROJECT SECTION STYLES ===================== */
+
+main .project-section {
+  position: relative;
+}
+
+main .project-section .portfolio-large-text1 {
+    position: absolute;
+  font-size: 250px;
+  text-align: center;
+  transform: rotate(90deg);
+  top: 8.3%;
+  left: 69%;
+  font-weight: 700;
+  opacity: 0.1;
+  color: #252e3f;
+}
+
+main .project-section .portfolio-large-text2 {
+    position: absolute;
+  font-size: 250px;
+  text-align: center;
+  transform: rotate(90deg);
+  top: 85%;
+  left: -20%;
+  font-weight: 700;
+  opacity: 0.1;
+  color: #252e3f;
+}
+
+
 main .project-section h2 {
     font-size: var( --fs-large);;
      text-align: center;
@@ -408,6 +451,43 @@ padding-inline: 15rem
   padding: 40px 15%;
   }
 }
+
+/*=======================================
+1300px above
+========================================= */
+@media screen and (min-width:1300px) {
+
+main .project-section .portfolio-large-text1 {
+    position: absolute;
+  font-size: 250px;
+  text-align: center;
+  transform: rotate(90deg);
+  top: 9.6%;
+  left: 56%;
+  font-weight: 700;
+  opacity: 0.1;
+  color: #252e3f;
+}
+
+main .project-section .portfolio-large-text2 {
+    position: absolute;
+  font-size: 250px;
+  text-align: center;
+  transform: rotate(90deg);
+  top: 82%;
+  left: -20%;
+  font-weight: 700;
+  opacity: 0.1;
+  color: #252e3f;
+}
+
+  
+}
+
+
+
+
+
 /*=======================================
 1000px below
 ==========================================
@@ -750,6 +830,19 @@ main .about-section {
 main .about-section .about-section-text{
  padding: 5rem;
 }
+
+
+  main .about-section .about-large-text {
+  position: absolute;
+  font-size: 50px;
+  text-align: center;
+  transform: rotate(90deg);
+  top: 26%;
+  left: -17%;
+  font-weight: 700;
+  opacity: 0.1;
+  color: #ffffff;
+}
   
 main .about-section .about-section-text h2 {
      font-size: var( --fs-large);;
@@ -856,9 +949,53 @@ main .hero-section h1{
  color:#BE415D;
     padding-bottom: 2rem;
   }
+
+  
+  main .about-section .about-large-text {
+  position: absolute;
+  font-size: 150px;
+  text-align: center;
+  transform: rotate(90deg);
+  top: 20%;
+  left: -35%;
+  font-weight: 700;
+  opacity: 0.1;
+  color: #ffffff;
+}
+
+
+  main .project-section .portfolio-large-text1 {
+  position: absolute;
+  font-size: 240px;
+  text-align: center;
+  transform: rotate(90deg);
+  top:11.3%;
+  left: 24%;
+  font-weight: 700;
+  opacity: 0.1;
+  color: #252e3f;
+}
+
+  
+
+
+  main .project-section .portfolio-large-text2 {
+    position: absolute;
+  font-size: 240px;
+  text-align: center;
+  transform: rotate(90deg);
+  top: 78%;
+  left: -46%;
+  font-weight: 700;
+  opacity: 0.1;
+  color: #252e3f;
+}
+
+  
 main .project-section .project-section-grid .card {
   width: 100%;
 }
+  
 main .project-section .project-section-grid .card a {
   cursor: pointer;
   font-size: 10px;
@@ -998,6 +1135,7 @@ nav {
     cursor: pointer;
     transition: all 500ms;
   }
+  
 main .hero-section {
     display: flex;
     flex-direction: column-reverse;
@@ -1009,8 +1147,8 @@ main .hero-section {
 }
 main .hero-section img {
      min-width: 50%;
-    padding: 0px 0rem 0 0;
 }
+  
 main .hero-section h1{
    font-size: 1.5rem;
    color:#252e3f;
@@ -1022,6 +1160,19 @@ main .hero-section h1{
    color:#BE415D;
     padding-bottom: 2rem;
   }
+
+  main .about-section .about-large-text {
+  position: absolute;
+  font-size: 1000px;
+  text-align: center;
+  transform: rotate(90deg);
+  top: 10%;
+  left: 0;
+  font-weight: 700;
+  opacity: 0.1;
+  color: #ffffff;
+}
+
 main .about-section .about-section-text h2 {
     font-size: var( --fs-double);
     color: #ffffff;
@@ -1043,6 +1194,15 @@ main .about-section .about-section-text p {
    main .about-section ul li {
      padding: 20px 35px;
    }
+
+    main .project-section .portfolio-large-text1 {
+display:none;
+}
+
+  main .project-section .portfolio-large-text2 {
+display:none;;
+}
+
 main .project-section h2 {
     font-size: var( --fs-double);
     text-align: center;
