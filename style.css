@@ -441,6 +441,18 @@ main .hero-section .hero-section-text p{
      font-family: 'Poppins', sans-serif;
      color:#BE415D;
 }
+
+  main .project-section .portfolio-large-text1 {
+    position: absolute;
+  font-size: 250px;
+  text-align: center;
+  transform: rotate(90deg);
+  top: 8.1%;
+  left: 67%;
+  font-weight: 700;
+  opacity: 0.1;
+   color: #252e3f;
+}
   
 .container {
 padding-inline: 15rem
@@ -455,7 +467,7 @@ padding-inline: 15rem
 /*=======================================
 1300px above
 ========================================= */
-@media screen and (min-width:1300px) {
+@media screen and (max-width:1380px) {
 
 main .project-section .portfolio-large-text1 {
     position: absolute;
