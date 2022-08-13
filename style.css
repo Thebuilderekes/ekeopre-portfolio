@@ -8,7 +8,7 @@
 :root {
   --fs-extralarge: 4rem; /*64px*/
   --fs-large: 3.125rem;    /* 50px*/
-  --fs-semilarge: 2.5rem;     /* 40px*/
+  --fs-semilarge: 2.5rem;    /* 40px*/
   --fs-double: 2rem;      /* 32px*/
   --fs-medium: 1.25rem;   /*20px*/
   --fs-semimedium: 1.125rem; /*18px*/
@@ -21,6 +21,7 @@ html {
   width: 100%;
   overflow-x:hidden;
   scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
 }
 
 body {
@@ -38,7 +39,7 @@ background: linear-gradient(to top right, #252F3F, #16181C);
 }
 
 .section-v-padding {
-  padding: 4rem 0;  
+  padding: 2rem 0;  
 }
 
 .container {
@@ -68,10 +69,11 @@ p {
 
 a {
   text-decoration: none;
+
 }
 
 h2 {
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 /* NAVIGATION */
@@ -465,7 +467,7 @@ padding-inline: 15rem
 }
 
 /*=======================================
-1300px above
+1300px below
 ========================================= */
 @media screen and (max-width:1380px) {
 
@@ -487,7 +489,7 @@ main .project-section .portfolio-large-text2 {
   text-align: center;
   transform: rotate(90deg);
   top: 82%;
-  left: -20%;
+  left: -29%;
   font-weight: 700;
   opacity: 0.1;
   color: #252e3f;
@@ -1032,7 +1034,7 @@ main .project-section .project-section-grid .card a {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 1.5em 3em;
+    padding: 1rem 3rem;
     flex-direction: column;
   }
 main .hero-section{
@@ -1040,6 +1042,7 @@ main .hero-section{
   flex-direction: column-reverse;
   justify-content: space-evenly;
   align-items: center;
+  padding: 30rem 0;
   font-family: 'Lato', sans-serif;
   height:100vh ;
 }
@@ -1054,6 +1057,12 @@ main .hero-section{
 main .about-section .about-section-text {
     padding: 2rem;
 }
+
+    
+  main .about-section .about-large-text {
+ display: none;
+}
+
 main .about-section .about-section-text p {
     font-size: var( --fs-semimedium);
     color: #f2f5fa;
@@ -1061,6 +1070,19 @@ main .about-section .about-section-text p {
     /* max-width: 800px; */
     line-height: 1.6;
 }
+
+  
+  main .project-section .portfolio-large-text1 {
+ display: none;
+}
+
+  
+
+
+  main .project-section .portfolio-large-text2 {
+display: none;
+}
+
 main .project-section .project-section-grid {
     display: flex;
     flex-direction: column;
@@ -1153,7 +1175,7 @@ main .hero-section {
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: center;
-     padding: 20rem 0 20rem 0rem;
+     padding: 25rem 0;
     font-family: 'Lato', sans-serif;
     height: 100vh;
 }
@@ -1272,13 +1294,12 @@ main .hero-section {
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: center;
-     padding: 20rem 0 20rem 0rem;
+    padding: 30rem 0;
     font-family: 'Lato', sans-serif;
     height: 100vh;
 }
 main .hero-section img {
      min-width: 50%;
-    padding: 0px 0rem 0 0;
 }
 main .hero-section h1{
    font-size: 1.5rem;
@@ -1287,7 +1308,7 @@ main .hero-section h1{
 }
   main .hero-section .hero-section-text p {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 400;
     color:#BE415D;
     padding-bottom: 2rem;
   }
@@ -1352,7 +1373,7 @@ main .hero-section {
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: center;
-     padding: 20rem 0 20rem 0rem;
+     padding: 27rem 0;
     font-family: 'Lato', sans-serif;
     height: 100vh;
 }
@@ -1471,7 +1492,7 @@ main .hero-section img {
 }
   main .hero-section .hero-section-text p {
     font-size: var(--fs-medium);
-    font-weight: 700;
+    font-weight: 400;
     color:#BE415D;
     padding-bottom: 2rem;
   }
@@ -1517,4 +1538,12 @@ main .project-section .project-section-grid .card a {
   padding: 7px 10px;
     margin-right: 20px; 
 }
+}
+
+/*=======================================
+319px below
+==========================================
+                                        */
+main .hero-section {
+  padding: 27rem 0;
 }

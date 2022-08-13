@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "postcss-discard-duplicates": "^5.1.0"
+  }
+}
