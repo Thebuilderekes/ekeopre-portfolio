@@ -79,7 +79,7 @@ h2 {
 /* NAVIGATION */
 
 nav {
- background: #f1f0f0;
+ background: #fbf9f9;
  position: fixed;
  top: 0;
  width: 100%;
@@ -136,8 +136,11 @@ main .hero-section{
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
-  align-items: center;
+  padding: 12rem 0;
   font-family: 'Lato', sans-serif;
+  background-image: url("./assets/mesh-gradient-low.png");
+  background-repeat: no-repeat;
+  backround-size: cover;
 }
 
 main .hero-section-text .ml3{
@@ -147,7 +150,7 @@ main .hero-section-text .ml3{
 }
 
 main .hero-section .hero-section-text {
-/*   margin: 0  1em 0 2em; */
+
   background: transparent;
 }
 
@@ -1544,6 +1547,3 @@ main .project-section .project-section-grid .card a {
 319px below
 ==========================================
                                         */
-main .hero-section {
-  padding: 27rem 0;
-}
